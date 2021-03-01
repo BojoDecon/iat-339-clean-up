@@ -271,15 +271,52 @@ a:hover {
                         <h3 class="heading-description">Description</h3>
                         <p>This call to action is designed to utilize color to denote a functionality allowing user to recognize interactive elements easier. The slightly muted blue also creates less of an agressive need for the interaction as we want the user experience to be relaxed and explorative. The ghost buttons are for buttons next to CTA buttons with less density in design resulting in less of an attraction for interaction (secondary CTA buttons).</p>
                         <h3 class="heading-code">Code</h3>
-                        <div class="element-code">
-                            <code>
-                                <pre>
-&lt;a href="" class="button"&gt; CTA Button &lt;/a&gt;
-&lt;a href="" class="button ghost"&gt; Ghost Button &lt;/a&gt;</pre>
-                            </code>
+                        <div class="code-html">
+                            <h4 class="heading-code">HTML</h4>
+                            <div class="element-code">
+                                <code>
+                                    &lt;a href="" class="button"&gt; CTA Button &lt;/a&gt;<br>
+                                    &lt;a href="" class="button ghost"&gt; Ghost Button &lt;/a&gt;
+                                </code>
+                            </div>
+                        </div>
+                        <div class="code-css">
+                            <h4 class="heading-code">CSS</h4>
+                            <div class="element-code">
+                                <code>
+                                    <pre>
+a.button {
+    padding: 0.75rem 1rem;
+    background: #69e;
+    border: 2px solid #69e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1rem;
+}
+
+a.button.ghost {
+    background: transparent;
+    color: #69e;
+}
+
+a.button:hover, a.button:focus {
+    box-shadow: 0 2px 10px 1px rgb(160,198,255);
+    background: #4D80D5;
+    border-color: #4D80D5;
+}
+
+a.button.ghost:hover, a.button.ghost:focus {
+    color: #fff;
+    background: #69e;
+    border-color: #69e;
+}</pre>
+                                 </code>
+                            </div>
                         </div>
                     </div>
-        
                 </section>
         
                 <section id="submit">
@@ -295,15 +332,39 @@ a:hover {
                         <h3 class="heading-description">Description</h3>
                         <p>Submit buttons will be the same as call to action buttons for the same reason outlined. The CSS and javascript will carry out the intended functionality.</p>
                         <h3 class="heading-code">Code</h3>
-                        <div class="element-code">
-                            <code>
-                                &lt;form action=""&gt; <br />
-                                &lt;input type="submit" value="Submit Button"&gt; <br />
-                                &lt;/form&gt;
-                            </code>
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+&lt;form action=""&gt; <br />
+    &lt;input type="submit" value="Submit Button"&gt; <br />
+&lt;/form&gt;</pre>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        <pre>
+input[type="submit"] {
+    background: #69e;
+    color: #fff;
+    border-color: #69e;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+    box-shadow: 0 2px 10px 1px rgb(160,198,255);
+    background: #4D80D5;
+    border-color: #4D80D5;
+}
+</pre>
+                                </code>
+                            </div>
                         </div>
                     </div>
-        
                 </section>
         
                 <section id="input">
@@ -318,11 +379,45 @@ a:hover {
                         <h3 class="heading-description">Description</h3>
                         <p>Text input and labels will be stacked on top of each other for easier design balance. The text input boxes will turn from grey to our primary blue when focused (clicked) on for responsiveness.</p>
                         <h3 class="heading-code">Code</h3>
-                        <div class="element-code">
-                            <code>
-                                &lt;label for="input-demo"&gt;Label&lt;/label&gt; <br />
-                                &lt;input type="text" id="input-demo" placeholder="Placeholder Text"&gt;
-                            </code>
+                        <div class="code-html">
+                            <h4 class="heading-code">HTML</h4>
+                            <div class="element-code">
+                                <code>
+                                    &lt;label for="input-demo"&gt;Label&lt;/label&gt; <br />
+                                    &lt;input type="text" id="input-demo" placeholder="Placeholder Text"&gt;
+                                </code>
+                            </div>
+                        </div>
+                        <div class="code-css">
+                            <h4 class="heading-code">CSS</h4>
+                            <div class="element-code">
+                                <code>
+                                    <pre>
+input, textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    border: 2px solid #ddd;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    display: block;
+    font-family: aktiv-grotesk, BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #69e;
+}
+
+input[type="text"], textarea {
+    padding: 0.5rem 0.75rem;
+}
+
+label {
+    margin-bottom: 0.25rem;
+}</pre>
+                                </code>
+                            </div>
                         </div>
                     </div>
         

@@ -200,6 +200,7 @@ h3.heading-example, h3.heading-code, h3.heading-description {
 
 pre {
     margin: 0;
+    overflow: auto;
 }
 
 /* MAIN NAV SECTION */
