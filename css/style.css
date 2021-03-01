@@ -421,15 +421,20 @@ h1.product-title {
 /* FOOTER */
 .footer{
     display: grid;
-    grid-template-columns: repeat(4, 2fr) 4fr;
-}
-
-.footer .contact-us{
-
+    grid-template-columns: repeat(4, 2.5fr) 2fr;
+    font-size: 0.8rem;
+    background-color: #454545;
 }
 
 .footer ul{
     list-style: none;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.footer li{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* REVIEW CAROUSEL */
