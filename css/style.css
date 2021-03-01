@@ -69,7 +69,6 @@ nav ul li:first-child {
 
 a {
     color: #69e;
-    text-decoration: none;
 }
 
 a:hover {
@@ -145,6 +144,7 @@ label {
 
 p {
     max-width: 36em;
+    line-height: 1.5;
 }
 
 h1.page-title {
@@ -164,7 +164,7 @@ section#headings .element-demo h1 {
     font-size: 2rem;
 }
 
-h3.heading-example, h3.heading-code {
+h3.heading-example, h3.heading-code, h3.heading-description {
     margin-top: 3rem;
 }
 
