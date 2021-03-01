@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Pattern Library &middot; Style Guide for IAT 339</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container top-level">
+            <div class="spacer">
+                <h2>Style Guide</h2>
+            </div>
+            <nav class="main-navbar">
+                <ul>
+                    <li><a class="button" href="index.html">Basic Styles</a></li>
+                    <li><a class="button" href="pattern-library.html">UI Pattern Library</a></li>
+                    <li><a class="button" href="wireframes.html">Wireframes</a></li>
+                    <li><a class="button" href="citations.html">Citations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container top-level">
+        <aside class="sidebar">
+            <nav class="secondary-nav">
+                <ul>
+                    <li>
+                        UI Components
+                        <ul>
+                            <li><a href="#nav-bar">Navigation Bar</a></li>
+                            <li><a href="#single-product">Single Product</a></li>
+                            <li><a href="#grid">Grid</a></li>
+                            <li><a href="#review-form">Product Review Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="container">
+                <h1 class="page-title">UI Pattern Library</h1>
+    
+                <section id="nav-bar">
+                    <h2>Navigation Bar</h2>
+        
+                    <div class="element">
+                        <h3 class="heading-example">Example</h3>
+                        <div class="element-demo">
+                            <nav class="main-nav">
+                                <div class="left">
+                                    <ul>
+                                        <li><a href="">
+                                            <img class="logo" src="assets/img/logo.png" alt="CleanUp Logo">
+                                        </a></li>
+                                    </ul>
+                                </div>
+                                <div class="center">
+                                    <ul>
+                                        <li><a href="">Products</a></li>
+                                        <li><a href="">Brands</a></li>
+                                        <li><a href="">Vacuum Finder</a></li>
+                                        <li><a href="">Help</a></li>
+                                        <li><a href="">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><a href=""><ion-icon name="search-outline"></ion-icon></a></li>
+                                        <li><a href=""><ion-icon name="person-circle-outline"></ion-icon></a></li>
+                                        <li><a href=""><ion-icon name="cart-outline"></ion-icon></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <h3 class="heading-code">Code</h3>
+                        
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+                                        &lt;nav class="main-nav"&gt; <br />
+                                            &lt;div class="left"&gt; <br />
+                                                &lt;ul&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt; <br />
+                                                        &lt;img class="logo" src="assets/img/logo.png" alt="CleanUp Logo"&gt; <br />
+                                                    &lt;/a&gt;&lt;/li&gt; <br />
+                                                &lt;/ul&gt; <br />
+                                            &lt;/div&gt; <br />
+                                            &lt;div class="center"&gt; <br />
+                                                &lt;ul&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;Products&lt;/a&gt;&lt;/li&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;Brands&lt;/a&gt;&lt;/li&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;Vacuum Finder&lt;/a&gt;&lt;/li&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;Help&lt;/a&gt;&lt;/li&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;FAQs&lt;/a&gt;&lt;/li&gt; <br />
+                                                &lt;/ul&gt; <br />
+                                            &lt;/div&gt; <br />
+                                            &lt;div class="right"&gt; <br />
+                                                &lt;ul&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="search-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="person-circle-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt; <br />
+                                                    &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="cart-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt; <br />
+                                                &lt;/ul&gt; <br />
+                                            &lt;/div&gt; <br />
+                                        &lt;/nav&gt; <br />
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        nav.main-nav { <br />
+                                            background: #F5F9FF; <br />
+                                            padding: 1rem; <br />
+                                            border: 1px solid #ddd; <br />
+                                            display: grid; <br />
+                                            grid-template-columns: 2fr 8fr 2fr; <br />
+                                        } <br />                                        
+                                        nav.main-nav .center { <br />
+                                            text-align: center; <br />
+                                        } <br />                                        
+                                        nav.main-nav .right { <br />
+                                            text-align: right; <br />
+                                            font-size: 1.25rem; <br />
+                                        } <br />                                        
+                                        nav.main-nav ul { <br />
+                                            margin: 0; <br />
+                                            padding: 0; <br />
+                                            height: 100%; <br />
+                                        } <br />                                        
+                                        nav.main-nav ul li { <br />
+                                            display: inline-block; <br />
+                                            height: 100%; <br />
+                                            padding: 0.75rem 1rem 0 1rem; <br />
+                                        } <br />                                        
+                                        nav.main-nav img.logo { <br />
+                                            margin-top: -0.1rem; <br />
+                                        } <br />
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </section>
+        
+                <section id="single-product">
+                    <h2>Single Product View</h2>
+        
+                    <div class="element">
+                        <h3>Example</h3>
+                        <div class="element-demo">
+                            <h1 class="product-title">iRobot Roomba 614 Robot Vacuum</h1>
+                            <div class="product-overview">
+                                <div class="image-gallery">
+                                    <div class="image-showcase">
+                                        <img src="assets/img/product/vac1.jpg" alt="Image of vacuum">
+                                    </div>
+                                    <div class="image-thumbnails">
+                                        <img src="assets/img/product/vac1.jpg" alt="Image of vacuum">
+                                        <img src="assets/img/product/vac3.jpg" alt="Image of vacuum">
+                                        <img src="assets/img/product/vac4.jpg" alt="Image of vacuum">
+                                        <img src="assets/img/product/vac5.jpg" alt="Image of vacuum">
+                                    </div>
+                                </div>
+                                <div class="product-info-right">
+                                    <div class="product-details">
+                                        <h2 class="price">$379.99</h2>
+                                        <div class="reviews-overview">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half"></ion-icon>
+                                            <p class="review-count">4.5 (347 reviews)</p>
+                                        </div>
+                                        <a href="" class="button">Add to cart</a>
+                                        <a href="" class="button ghost">Add to wish list</a>
+                                    </div>
+                                    <div class="shipping-details">
+                                        <h3>Shipping</h3>
+                                        <p>3-4 business days via Canada Post.</p>
+                                        <p>Orders placed before 4pm PST will ship on the same day.</p>
+                                    </div>
+                                    <div class="features-small">
+                                        <div class="feature">
+                                            <ion-icon name="trophy-outline" class="feature-icon"></ion-icon>
+                                            <p class="feature-text">5-year warranty</p>
+                                        </div>
+                                        <div class="feature">
+                                            <ion-icon name="reload-outline" class="feature-icon"></ion-icon>
+                                            <p class="feature-text">Hassle-free returns</p>
+                                        </div>
+                                        <div class="feature">
+                                            <ion-icon name="cube-outline" class="feature-icon"></ion-icon>
+                                            <p class="feature-text">Free shipping</p>
+                                        </div>
+                                        <div class="feature">
+                                            <ion-icon name="call-outline" class="feature-icon"></ion-icon>
+                                            <p class="feature-text">24/7 support</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="heading-code">Code</h3>
+                        
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+                                        &lt;h1 class="product-title"&gt;iRobot Roomba 614 Robot Vacuum&lt;/h1&gt; <br />
+                                        &lt;div class="product-overview"&gt; <br />
+                                            &lt;div class="image-gallery"&gt; <br />
+                                                &lt;div class="image-showcase"&gt; <br />
+                                                    &lt;img src="assets/img/product/vac1.jpg" alt="Image of vacuum"&gt; <br />
+                                                &lt;/div&gt; <br />
+                                                &lt;div class="image-thumbnails"&gt; <br />
+                                                    &lt;img src="assets/img/product/vac1.jpg" alt="Image of vacuum"&gt; <br />
+                                                    &lt;img src="assets/img/product/vac3.jpg" alt="Image of vacuum"&gt; <br />
+                                                    &lt;img src="assets/img/product/vac4.jpg" alt="Image of vacuum"&gt; <br />
+                                                    &lt;img src="assets/img/product/vac5.jpg" alt="Image of vacuum"&gt; <br />
+                                                &lt;/div&gt; <br />
+                                            &lt;/div&gt; <br />
+                                            &lt;div class="product-info-right"&gt; <br />
+                                                &lt;div class="product-details"&gt; <br />
+                                                    &lt;h2 class="price"&gt;$379.99&lt;/h2&gt; <br />
+                                                    &lt;div class="reviews-overview"&gt; <br />
+                                                        &lt;ion-icon name="star"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;ion-icon name="star"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;ion-icon name="star"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;ion-icon name="star"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;ion-icon name="star-half"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;p class="review-count"&gt;4.5 (347 reviews)&lt;/p&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                    &lt;a href="" class="button"&gt;Add to cart&lt;/a&gt; <br />
+                                                    &lt;a href="" class="button ghost"&gt;Add to wish list&lt;/a&gt; <br />
+                                                &lt;/div&gt; <br />
+                                                &lt;div class="shipping-details"&gt; <br />
+                                                    &lt;h3&gt;Shipping&lt;/h3&gt; <br />
+                                                    &lt;p&gt;3-4 business days via Canada Post.&lt;/p&gt; <br />
+                                                    &lt;p&gt;Orders placed before 4pm PST will ship on the same day.&lt;/p&gt; <br />
+                                                &lt;/div&gt; <br />
+                                                &lt;div class="features-small"&gt; <br />
+                                                    &lt;div class="feature"&gt; <br />
+                                                        &lt;ion-icon name="trophy-outline" class="feature-icon"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;p class="feature-text"&gt;5-year warranty&lt;/p&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                    &lt;div class="feature"&gt; <br />
+                                                        &lt;ion-icon name="reload-outline" class="feature-icon"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;p class="feature-text"&gt;Hassle-free returns&lt;/p&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                    &lt;div class="feature"&gt; <br />
+                                                        &lt;ion-icon name="cube-outline" class="feature-icon"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;p class="feature-text"&gt;Free shipping&lt;/p&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                    &lt;div class="feature"&gt; <br />
+                                                        &lt;ion-icon name="call-outline" class="feature-icon"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;p class="feature-text"&gt;24/7 support&lt;/p&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                &lt;/div&gt; <br />
+                                            &lt;/div&gt; <br />
+                                        &lt;/div&gt;<br />
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        .product-overview { <br />
+                                            display: grid; <br />
+                                            grid-template-columns: repeat(12, 1fr); <br />
+                                            column-gap: 2rem; <br />
+                                        }<br />                                        
+                                        .image-gallery { <br />
+                                            grid-column: 1 / 7; <br />
+                                            text-align: center; <br />
+                                            row-gap: 1rem; <br />
+                                        }<br />                                        
+                                        .image-gallery .image-thumbnails img { <br />
+                                            border-radius: 4px; <br />
+                                        }<br />                                        
+                                        .image-thumbnails { <br />
+                                            display: grid; <br />
+                                            grid-template-columns: repeat(4, 1fr); <br />
+                                            column-gap: 1rem; <br />
+                                        }<br />                                        
+                                        .product-info-right { <br />
+                                            grid-column: 8 / 12; <br />
+                                            margin-top: 2rem; <br />
+                                        }<br />                                        
+                                        h1.product-title { <br />
+                                            font-size: 1.75rem; <br />
+                                            margin: 2rem 0; <br />
+                                            font-weight: 400; <br />
+                                        }<br />                                        
+                                        .product-details h2.price { <br />
+                                            font-weight: 400; <br />
+                                            font-size: 1.75rem; <br />
+                                            margin-bottom: 1rem; <br />
+                                        }<br />                                        
+                                        .product-details a.button { <br />
+                                            display: block; <br />
+                                            font-size: 1rem; <br />
+                                            max-width: 17.5rem; <br />
+                                            margin: 1rem 0; <br />
+                                        }<br />                                        
+                                        .product-details .reviews-overview { <br />
+                                            margin: 1rem 0; <br />
+                                        }<br />                                        
+                                        .product-details .reviews-overview ion-icon { <br />
+                                            color: #FEDE00; <br />
+                                            display: inline-block; <br />
+                                        }<br />                                        
+                                        .product-details .reviews-overview p.review-count { <br />
+                                            display: inline-block; <br />
+                                            margin: 0 0.5rem; <br />
+                                            vertical-align: top; <br />
+                                            font-size: 0.75rem; <br />
+                                        }<br />                                        
+                                        .shipping-details { <br />
+                                            margin: 2rem 0; <br />
+                                        }<br />                                        
+                                        .shipping-details h3 { <br />
+                                            font-weight: 400; <br />
+                                        }<br />                                        
+                                        .shipping-details p { <br />
+                                            max-width: 17.5rem; <br />
+                                            font-size: 0.8rem; <br />
+                                            margin-bottom: 0; <br />
+                                        }<br />                                        
+                                        .features-small { <br />
+                                            display: grid; <br />
+                                            grid-template-columns: repeat(4, 1fr); <br />
+                                            column-gap: 1rem; <br />
+                                        }<br />                                        
+                                        .features-small .feature { <br />
+                                            text-align: center; <br />
+                                        }<br />                                        
+                                        .features-small .feature .feature-icon { <br />
+                                            font-size: 1.5rem; <br />
+                                        }<br />                                        
+                                        .features-small .feature .feature-text { <br />
+                                            font-size: 0.8rem; <br />
+                                        }<br />
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </section>
+        
+                <section id="grid">
+                    <h2>Grid</h2>
+        
+                    <div class="element">
+                        <h3>Example</h3>
+                        <div class="element-demo">
+                            <div class="grid-container twelve">
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                            </div>
+                            <div class="grid-container six">
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                            </div>
+                            <div class="grid-container four">
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                            </div>
+                            <div class="grid-container three">
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                            </div>
+                            <div class="grid-container two">
+                                <div class="grid-element"></div>
+                                <div class="grid-element"></div>
+                            </div>
+                            <div class="grid-container one">
+                                <div class="grid-element"></div>
+                            </div>
+                        </div>
+
+                        <h3 class="heading-code">Code</h3>
+
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+                                        &lt;div class="grid-container twelve"&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;/div&gt;  <br />
+                                        &lt;div class="grid-container six"&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;/div&gt; <br />
+                                        &lt;div class="grid-container four"&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;/div&gt; <br />
+                                        &lt;div class="grid-container three"&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;/div&gt; <br />
+                                        &lt;div class="grid-container two"&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;/div&gt;
+                                        &lt;div class="grid-container one"&gt; <br />
+                                        &lt;div class="grid-element"&gt;&lt;/div&gt; <br />
+                                        &lt;/div&gt; <br />
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        
+                                        #grid .grid-container.twelve { <br />
+                                            grid-template-columns: repeat(12, 1fr); <br />
+                                        } <br />
+                                        #grid .grid-container.six { <br />
+                                            grid-template-columns: repeat(6, 1fr); <br />
+                                        } <br />
+                                        #grid .grid-container.four { <br />
+                                            grid-template-columns: repeat(4, 1fr); <br />
+                                        } <br />
+                                        #grid .grid-container.three { <br />
+                                            grid-template-columns: repeat(3, 1fr); <br />
+                                        } <br />
+                                        #grid .grid-container.two { <br />
+                                            grid-template-columns: repeat(2, 1fr); <br />
+                                        } <br />
+                                        #grid .grid-container.one { <br />
+                                            grid-template-columns: 1fr; <br />
+                                        } <br />
+                                        #grid .grid-element { <br />
+                                            background: #69e; <br />
+                                            margin-bottom: 1rem; <br />
+                                        } <br />
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section id="review-form">
+                    <h2>Product Review Form</h2>
+        
+                    <div class="element">
+                        <h3>Example</h3>
+                        <div class="element-demo">
+                            <div class="review-form">
+                                <h2>Your Review</h2>
+                                <form action="">
+                                    <div class="input-group">
+                                        <label for="review-title">Review title</label>
+                                        <input type="text" id="review-title" placeholder="Review Title">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="review-title">Review body</label>
+                                        <textarea id="review-title" placeholder="Your review"></textarea>
+                                    </div>
+                                    <div class="review-form-half">
+                                        <div class="input-group">
+                                            <p>Would you recommend this product to others?</p>
+                                            <input type="radio" id="yes" name="recommend" value="yes">
+                                            <label for="yes">Yes</label>
+                                            <input type="radio" id="no" name="recommend" value="no">
+                                            <label for="no">No</label>
+                                        </div>
+                                        <div class="input-group">
+                                            <p>Please give your experience a rating</p>
+                                            <div class="rating-cluster">
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit">
+                                </form>
+                            </div>
+                        </div>
+                        <h3 class="heading-code">Code</h3>
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+                                        &lt;div class="review-form"&gt; <br />
+                                            &lt;h2&gt;Your Review&lt;/h2&gt; <br />
+                                            &lt;form action=""&gt; <br />
+                                                &lt;div class="input-group"&gt; <br />
+                                                    &lt;label for="review-title"&gt;Review title&lt;/label&gt; <br />
+                                                    &lt;input type="text" id="review-title" placeholder="Review Title"&gt; <br />
+                                                &lt;/div&gt; <br />
+                                                &lt;div class="input-group"&gt; <br />
+                                                    &lt;label for="review-title"&gt;Review body&lt;/label&gt; <br />
+                                                    &lt;textarea id="review-title" placeholder="Your review"&gt;&lt;/textarea&gt; <br />
+                                                &lt;/div&gt; <br />
+                                                &lt;div class="review-form-half"&gt; <br />
+                                                    &lt;div class="input-group"&gt; <br />
+                                                        &lt;p&gt;Would you recommend this product to others?&lt;/p&gt; <br />
+                                                        &lt;input type="radio" id="yes" name="recommend" value="yes"&gt; <br />
+                                                        &lt;label for="yes"&gt;Yes&lt;/label&gt; <br />
+                                                        &lt;input type="radio" id="no" name="recommend" value="no"&gt; <br />
+                                                        &lt;label for="no"&gt;No&lt;/label&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                    &lt;div class="input-group"&gt; <br />
+                                                        &lt;p&gt;Please give your experience a rating&lt;/p&gt; <br />
+                                                        &lt;div class="rating-cluster"&gt; <br />
+                                                            &lt;ion-icon name="star-outline"&gt;&lt;/ion-icon&gt; <br />
+                                                            &lt;ion-icon name="star-outline"&gt;&lt;/ion-icon&gt; <br />
+                                                            &lt;ion-icon name="star-outline"&gt;&lt;/ion-icon&gt; <br />
+                                                            &lt;ion-icon name="star-outline"&gt;&lt;/ion-icon&gt; <br />
+                                                            &lt;ion-icon name="star-outline"&gt;&lt;/ion-icon&gt; <br />
+                                                        &lt;/div&gt; <br />
+                                                    &lt;/div&gt; <br />
+                                                &lt;/div&gt; <br />
+                                                &lt;input type="submit"&gt; <br />
+                                            &lt;/form&gt; <br />
+                                        &lt;/div&gt; <br />
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        .review-form { <br /> 
+                                            background: #F5F9FF; <br />
+                                            padding: 2rem; <br />
+                                            width: 40rem; <br />
+                                            max-width: 100%; <br />
+                                            border-radius: 4px; <br />
+                                            box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5); <br />
+                                        } <br />
+
+                                        .review-form h2 { <br />
+                                            margin-top: 0; <br />
+                                            font-weight: 400; <br />
+                                        } <br />
+
+                                        .review-form .input-group { <br />
+                                            max-width: 100%; <br />
+                                            margin: 1.5rem 0; <br />
+                                        } <br />
+
+                                        .review-form .input-group p { <br />
+                                            margin-top: 0; <br />
+                                        } <br />
+
+                                        .review-form input, textarea { <br />
+                                            width: 100%; <br />
+                                            max-width: 100%; <br />
+                                        } <br />
+
+                                        .review-form input[type="radio"] { <br />
+                                            width: auto; <br />
+                                            display: inline-block; <br />
+                                        } <br />
+
+                                        .review-form-half { <br />
+                                            display: grid; <br />
+                                            grid-template-columns: 1fr 1fr; <br />
+                                            column-gap: 1rem; <br />
+                                        } <br />
+
+                                        .review-form .rating-cluster { <br />
+                                            color: #FEDE00; <br />
+                                            font-size: 1.25rem; <br />
+                                            cursor: pointer; <br />
+                                        }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container top-level">
+            <div class="spacer"></div>
+            <div class="content">
+                 <ul>
+                     <li>&copy; Nishant Gadihoke (301392134) 2021 for IAT 339 at Simon Fraser University</li>
+                     <li><a href="citations.html">Citations</a></li>
+                 </ul>
+            </div>
+        </div>
+     </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>
