@@ -418,6 +418,20 @@ h1.product-title {
     cursor: pointer;
 }
 
+/* FOOTER */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr) 4fr;
+}
+
+.footer .contact-us{
+
+}
+
+.footer ul{
+    list-style: none;
+}
+
 /* REVIEW CAROUSEL */
 
 .review-carousel {
