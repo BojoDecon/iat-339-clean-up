@@ -498,7 +498,8 @@ h1.product-title {
 }
 
 .contact-us a.button {
-    margin: 1.5rem;
+    margin: 1.4rem;
+    padding: 0.4rem;
 }
 
 .footer a, .footer li {
