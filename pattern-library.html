@@ -110,7 +110,8 @@
             &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="cart-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
-&lt;/nav&gt;</pre>
+&lt;/nav&gt;
+                                        </pre>
                                     </code>
                                 </div>
                             </div>
@@ -151,6 +152,7 @@ nav.main-nav ul li {
 nav.main-nav img.logo {
     margin-top: -0.1rem;
 }
+                                        </pre>
                                     </code>
                                 </div>
                             </div>
@@ -724,78 +726,102 @@ nav.main-nav img.logo {
                             </div>
 
                         </div>
+        
+                </section>
 
-                        <!-- <h3 class="heading-code">Code</h3>
-                        
-                        <div class="code-grid-container">
-                            <div class="code-html">
-                                <h4 class="heading-code">HTML</h4>
-                                <div class="element-code">
-                                    <code>
-                                        &lt;nav class="main-nav"&gt; <br />
-                                            &lt;div class="left"&gt; <br />
-                                                &lt;ul&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt; <br />
-                                                        &lt;img class="logo" src="assets/img/logo.png" alt="CleanUp Logo"&gt; <br />
-                                                    &lt;/a&gt;&lt;/li&gt; <br />
-                                                &lt;/ul&gt; <br />
-                                            &lt;/div&gt; <br />
-                                            &lt;div class="center"&gt; <br />
-                                                &lt;ul&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;Products&lt;/a&gt;&lt;/li&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;Brands&lt;/a&gt;&lt;/li&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;Vacuum Finder&lt;/a&gt;&lt;/li&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;Help&lt;/a&gt;&lt;/li&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;FAQs&lt;/a&gt;&lt;/li&gt; <br />
-                                                &lt;/ul&gt; <br />
-                                            &lt;/div&gt; <br />
-                                            &lt;div class="right"&gt; <br />
-                                                &lt;ul&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="search-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="person-circle-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt; <br />
-                                                    &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="cart-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt; <br />
-                                                &lt;/ul&gt; <br />
-                                            &lt;/div&gt; <br />
-                                        &lt;/nav&gt; <br />
-                                    </code>
+                <section id="shopping-cart">
+                    <h2>Shopping Cart</h2>
+        
+                    <div class="element">
+                        <h3 class="heading-example">Example</h3>
+                        <div class="element-demo">
+                            
+                            <h2>Checkout</h1>
+                            <div class="checkout-grid">
+                                <div class="checkout-information">
+                                    <h3 class="checkout-step-heading">Shipping Information</h3>
+                                    <form action="" class="checkout-form">
+                                        <div class="form-row half">
+                                            <div class="input-group">
+                                                <label for="input-first-name">First Name</label>
+                                                <input type="text" id="input-first-name" placeholder="Jennifer">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="input-last-name">Last Name</label>
+                                                <input type="text" id="input-last-name" placeholder="Appleseed">
+                                            </div>
+                                        </div>
+                                        <div class="form-row half">
+                                            <div class="input-group">
+                                                <label for="input-email">Email Address</label>
+                                                <input type="email" id="input-email" placeholder="jennifer.appleseed@gmail.com">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="input-phone">Phone Number</label>
+                                                <input type="number" id="input-phone" placeholder="+1 778-778-7788">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="input-group">
+                                                <label for="input-addres-1">Address Line #1</label>
+                                                <input type="text" id="input-address-1" placeholder="1234 University Crescent">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="input-group">
+                                                <label for="input-addres-2">Address Line #2</label>
+                                                <input type="text" id="input-address-2" placeholder="Unit #5678">
+                                            </div>
+                                        </div>
+                                        <div class="form-row thirds">
+                                            <div class="input-group">
+                                                <label for="input-city">City</label>
+                                                <input type="text" id="input-city" placeholder="Kamloops">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="input-province">Province</label>
+                                                <select id="input-province">
+                                                    <option value="AB">Alberta</option>
+                                                    <option value="BC">British Columbia</option>
+                                                    <option value="ON">Ontario</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="input-post-code">Postal Code</label>
+                                                <input type="text" id="input-post-code" placeholder="V5X 4X9">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="checkout-summary">
+                                    <h2>Order Summary</h2>
+                                    <ul class="checkout-list">
+                                        <li class="checkout-item">
+                                            <span class="checkout-item-name">iRobot SuperClean 860</span>
+                                            <span class="checkout-item-price">$379.95</span>
+                                        </li>
+                                        <li class="checkout-item">
+                                            <span class="checkout-item-name">Shipping</span>
+                                            <span class="checkout-item-price">Free</span>
+                                        </li>
+                                        <li class="checkout-item">
+                                            <span class="checkout-item-name">Environment Fee</span>
+                                            <span class="checkout-item-price">$1.50</span>
+                                        </li>
+                                        <li class="checkout-item">
+                                            <span class="checkout-item-name">Estimated Taxes</span>
+                                            <span class="checkout-item-price">$45.57</span>
+                                        </li>
+                                        <li class="checkout-item total">
+                                            <span class="checkout-item-name">Total</span>
+                                            <span class="checkout-item-price">$427.02</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="button">Continue to payment</a>
                                 </div>
                             </div>
-                            <div class="code-css">
-                                <h4 class="heading-code">CSS</h4>
-                                <div class="element-code">
-                                    <code>
-                                        nav.main-nav { <br />
-                                            background: #F5F9FF; <br />
-                                            padding: 1rem; <br />
-                                            border: 1px solid #ddd; <br />
-                                            display: grid; <br />
-                                            grid-template-columns: 2fr 8fr 2fr; <br />
-                                        } <br />                                        
-                                        nav.main-nav .center { <br />
-                                            text-align: center; <br />
-                                        } <br />                                        
-                                        nav.main-nav .right { <br />
-                                            text-align: right; <br />
-                                            font-size: 1.25rem; <br />
-                                        } <br />                                        
-                                        nav.main-nav ul { <br />
-                                            margin: 0; <br />
-                                            padding: 0; <br />
-                                            height: 100%; <br />
-                                        } <br />                                        
-                                        nav.main-nav ul li { <br />
-                                            display: inline-block; <br />
-                                            height: 100%; <br />
-                                            padding: 0.75rem 1rem 0 1rem; <br />
-                                        } <br />                                        
-                                        nav.main-nav img.logo { <br />
-                                            margin-top: -0.1rem; <br />
-                                        } <br />
-                                    </code>
-                                </div>
-                            </div>
+
                         </div>
-                    </div> -->
         
                 </section>
 
