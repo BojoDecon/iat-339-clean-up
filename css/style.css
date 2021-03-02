@@ -432,16 +432,60 @@ h1.product-title {
 /* FOOTER */
 .footer{
     display: grid;
+    grid-template-columns: repeat(4, 2.5fr) 2fr;
+    font-size: 0.8rem;
+    background-color: #454545;
+}
+
+.footer-top-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 12 / auto;
+    padding: 1rem;
+    background: rgb(245, 249, 255);
+}
+
+.footer-top-row-info-card {
+    text-align: center;
+    color: rgb(69, 69, 69);
+    font-size: 0.8rem;
+}
+
+.footer-top-row-info-card ion-icon {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.footer-bottom-row {
+    display: grid;
     grid-template-columns: repeat(4, 2fr) 4fr;
+    font-size: 0.8rem;
+    background-color: rgb(69, 69, 69);
+    grid-column: span 12 / auto;
 }
 
-.footer .contact-us{
-
+.footer h4 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0px 1.5rem;
 }
 
-.footer ul{
+.contact-us a.button {
+    margin: 1.5rem;
+}
+
+.footer a, .footer li {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer ul {
+    line-height: 1.5rem;
     list-style: none;
+    padding: 0px 1.5rem 1.5rem;
 }
+
+
 
 /* REVIEW CAROUSEL */
 
@@ -588,6 +632,94 @@ img.review-info-image {
 .checkout-summary ul.checkout-list li.checkout-item .checkout-item-price {
     text-align: right;
 }
+/* EXPLORE TOP BRANDS*/
+
+h2.top-brands-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0px;
+}
+
+.explore-top-brands-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0px;
+}
+
+.top-brands-top-row {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.top-brands-middle-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 3 / span 8;
+    gap: 3rem;
+    padding: 0.5rem;
+}
+
+.top-brands-bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+.top-brands-bottom-row a.button {
+    padding: 0.5rem;
+    margin: 0px 0.5rem;
+}
+
+/* PRODUCT GRID VIEW */
+
+.product-grid-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 3 / span 8;
+    column-gap: 2rem;
+}
+
+.single-product-container {
+
+}
+
+.image-container {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    max-width: 10rem;
+    width: 75%;
+}
+
+h2.single-product-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.reviews-overview ion-icon {
+    color: #FEDE00;
+    display: inline-block;
+}
+
+.reviews-overview p.review-count {
+    display: inline-block;
+    margin: 0 0.5rem;
+    vertical-align: top;
+    font-size: 0.75rem;
+}
+
+p.single-product-price {
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+    font-weight: bold;
+}
 
 /* MEDIA QUERIES */
 
@@ -624,4 +756,3 @@ img.review-info-image {
     }
     
 }
-
