@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/bbf3zdz.css");
+product-grid-view@import url("https://use.typekit.net/bbf3zdz.css");
 
 * {
     box-sizing: border-box;
@@ -274,6 +274,13 @@ nav.main-nav .mobile {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 2rem;
+}
+
+.image-showcase {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem; 
 }
 
 .image-gallery {
@@ -690,7 +697,7 @@ h2.top-brands-title {
 
 /* PRODUCT GRID VIEW */
 
-.product-grid-view {
+.product-grid-view-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column: 3 / span 8;
