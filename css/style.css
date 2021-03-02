@@ -485,7 +485,7 @@ h1.product-title {
 
 .footer-bottom-row {
     display: grid;
-    grid-template-columns: repeat(4, 2fr) 4fr;
+    grid-template-columns: repeat(6, 2fr);
     font-size: 0.8rem;
     background-color: rgb(69, 69, 69);
     grid-column: span 12 / auto;
@@ -688,6 +688,7 @@ h2.top-brands-title {
 .top-brands-bottom-row {
     display: flex;
     justify-content: center;
+    padding: 2rem;
 }
 
 .top-brands-bottom-row a.button {
