@@ -185,6 +185,13 @@ h3.heading-example, h3.heading-code, h3.heading-description {
     background: #fff;
 }
 
+.element-code pre {
+    background: #fff;
+    max-width: 100%;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
 .color-item {
     text-align: center;
 }
@@ -208,11 +215,6 @@ h3.heading-example, h3.heading-code, h3.heading-description {
     max-width: 100%;
 }
 
-pre {
-    margin: 0;
-    overflow: auto;
-}
-
 /* MAIN NAV SECTION */
 
 nav.main-nav {
@@ -220,7 +222,7 @@ nav.main-nav {
     padding: 1rem;
     border: 1px solid #ddd;
     display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 3fr 6fr 3fr;
 }
 
 nav.main-nav .center {
@@ -241,11 +243,29 @@ nav.main-nav ul {
 nav.main-nav ul li {
     display: inline-block;
     height: 100%;
-    padding: 0.75rem 1rem 0 1rem;
+    padding: 0 1rem;
+}
+
+nav.main-nav ul li a {
+    display: inline-block;
+    height: 100%;
+}
+
+nav.main-nav .left ul li a {
+    line-height: 0;
+    position: relative;
 }
 
 nav.main-nav img.logo {
-    margin-top: -0.1rem;
+    max-width: 150px;
+    position: absolute;
+}
+
+nav.main-nav .mobile {
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 2rem;
+    display: none;
 }
 
 /* SINGLE PRODUCT VIEW */
@@ -509,10 +529,6 @@ h1.product-title {
     z-index: 1;
 }
 
-.review-element:not(.active):first-child {
-    float: left;
-}
-
 .review-element:not(.active):last-child {
     float: right;
 }
@@ -730,6 +746,16 @@ p.single-product-price {
     .spacer h2 {
         margin-left: 0;
     }
+    nav.main-nav ul li {
+        padding: 0 0.75rem;
+    }
+    nav.main-nav {
+        grid-template-columns: 3fr 7fr 2fr;
+    }
+    
+    nav.main-nav .right ul li {
+        padding: 0 0.5rem;
+    }
 }
 
 @media  all and (max-width: 1050px) {
@@ -739,6 +765,20 @@ p.single-product-price {
     .review-element.active {
         position: relative;
         margin: 0 auto;
+    }
+    nav.main-nav {
+        grid-template-columns: 3fr 1fr;
+    }
+    nav.main-nav .center, nav.main-nav .right {
+        display: none;
+    }
+    nav.main-nav img.logo {
+        position: absolute;
+        top: 25%;
+    }
+    nav.main-nav .mobile {
+        display: block;
+        margin-top: 0.25em;
     }
 }
 

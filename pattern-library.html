@@ -54,9 +54,11 @@
                             <nav class="main-nav">
                                 <div class="left">
                                     <ul>
-                                        <li><a href="">
-                                            <img class="logo" src="assets/img/logo.png" alt="CleanUp Logo">
-                                        </a></li>
+                                        <li>
+                                            <a href="">
+                                                <img class="logo" src="assets/img/logo.png" alt="CleanUp Logo">
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="center">
@@ -75,6 +77,9 @@
                                         <li><a href=""><ion-icon name="cart-outline"></ion-icon></a></li>
                                     </ul>
                                 </div>
+                                <div class="mobile">
+                                    <a href=""><ion-icon name="menu-outline"></ion-icon></a>
+                                </div>
                             </nav>
                         </div>
                         <h3 class="heading-description">Description</h3>
@@ -88,10 +93,12 @@
                                         <pre>
 &lt;nav class="main-nav"&gt;
     &lt;div class="left"&gt;
-         &lt;ul&gt;
-            &lt;li&gt;&lt;a href=""&gt;
-                &lt;img class="logo" src="assets/img/logo.png" alt="CleanUp Logo"&gt;
-             &lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;a href=""&gt;
+                    &lt;img class="logo" src="assets/img/logo.png" alt="CleanUp Logo"&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class="center"&gt;
@@ -110,6 +117,9 @@
             &lt;li&gt;&lt;a href=""&gt;&lt;ion-icon name="cart-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
+    &lt;div class="mobile"&gt;
+        &lt;a href=""&gt;&lt;ion-icon name="menu-outline"&gt;&lt;/ion-icon&gt;&lt;/a&gt;
+    &lt;/div&gt;
 &lt;/nav&gt;
                                         </pre>
                                     </code>
@@ -125,33 +135,51 @@ nav.main-nav {
     padding: 1rem;
     border: 1px solid #ddd;
     display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 3fr 6fr 3fr;
 }
 
 nav.main-nav .center {
     text-align: center;
-}                                   
-                                        
+}
+
 nav.main-nav .right {
     text-align: right;
     font-size: 1.25rem;
-}                                  
-                                        
+}
+
 nav.main-nav ul {
     margin: 0;
     padding: 0;
     height: 100%;
-}                                     
+}
 
 nav.main-nav ul li {
     display: inline-block;
     height: 100%;
-    padding: 0.75rem 1rem 0 1rem;
-}                                      
+    padding: 0 1rem;
+}
+
+nav.main-nav ul li a {
+    display: inline-block;
+    height: 100%;
+}
+
+nav.main-nav .left ul li a {
+    line-height: 0;
+    position: relative;
+}
 
 nav.main-nav img.logo {
-    margin-top: -0.1rem;
+    max-width: 150px;
+    position: absolute;
 }
+
+nav.main-nav .mobile {
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 2rem;
+    display: none;
+}                                       
                                         </pre>
                                     </code>
                                 </div>
@@ -910,7 +938,137 @@ nav.main-nav img.logo {
                                     </div>
                                 </div>
                             </div>
+                            
+                        </div>
 
+                        <h3 class="heading-code">Code</h3>
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+                                        <pre>
+&lt;div class="review-carousel"&gt;
+    &lt;div class="review-element"&gt;
+        &lt;h2 class="review-heading"&gt;Cleans intelligently&lt;/h2&gt;
+        &lt;p class="review-body"&gt;I am impressed with how well it performs. It has features that recognizes stairways and navigates around the house on both hardwood and carpet without getting stuck on furniture.&lt;/p&gt;
+        &lt;div class="review-info"&gt;
+            &lt;div class="review-info"&gt;
+                &lt;img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image"&gt;
+                &lt;div class="review-info-text"&gt;
+                    &lt;h3 class="review-info-name"&gt;Anna Smithers&lt;/h3&gt;
+                    &lt;p class="review-info-description"&gt;Bought the Dyson v12 EasyVac&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="review-element active"&gt;
+        &lt;h2 class="review-heading"&gt;Cleans intelligently&lt;/h2&gt;
+        &lt;p class="review-body"&gt;I am impressed with how well it performs. It has features that recognizes stairways and navigates around the house on both hardwood and carpet without getting stuck on furniture.&lt;/p&gt;
+        &lt;div class="review-info"&gt;
+            &lt;div class="review-info"&gt;
+                &lt;img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image"&gt;
+                &lt;div class="review-info-text"&gt;
+                    &lt;h3 class="review-info-name"&gt;Anna Smithers&lt;/h3&gt;
+                    &lt;p class="review-info-description"&gt;Bought the Dyson v12 EasyVac&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="review-element"&gt;
+        &lt;h2 class="review-heading"&gt;Cleans intelligently&lt;/h2&gt;
+        &lt;p class="review-body"&gt;I am impressed with how well it performs. It has features that recognizes stairways and navigates around the house on both hardwood and carpet without getting stuck on furniture.&lt;/p&gt;
+        &lt;div class="review-info"&gt;
+            &lt;div class="review-info"&gt;
+                &lt;img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image"&gt;
+                &lt;div class="review-info-text"&gt;
+                    &lt;h3 class="review-info-name"&gt;Anna Smithers&lt;/h3&gt;
+                    &lt;p class="review-info-description"&gt;Bought the Dyson v12 EasyVac&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                        </pre>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        <pre>
+.review-carousel {
+    margin: 0 auto;
+    width: 80em;
+    max-width: 100%;
+    position: relative;
+}
+
+.review-element {
+    font-size: 0.6em;
+    border-radius: 4px;
+    display: inline-block;
+    width: 40em;
+    max-width: 100%;
+    background: #F5F9FF;
+    opacity: 0.6;
+    padding: 2rem;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    z-index: 1;
+}
+
+.review-element:not(.active):last-child {
+    float: right;
+}
+
+.review-element.active {
+    font-size: 0.8em;
+    opacity: 1;
+    z-index: 10;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: -2em;
+}
+
+h2.review-heading {
+    margin-top: 0;
+}
+
+p.review-body {
+    line-height: 1.5;
+
+}
+
+.review-info {
+    float: right;
+}
+
+h3.review-info-name {
+    margin: 0;
+}
+
+p.review-info-description {
+    margin: 0;
+}
+
+.review-info-text {
+    display: inline-block;
+}
+
+img.review-info-image {
+    max-width: 2.5em;
+    display: inline-block;
+    border-radius: 100%;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    margin-right: 0.8em;
+}
+                                        </pre> 
+                                    </code>
+                                </div>
+                            </div>
                         </div>
         
                 </section>
@@ -921,7 +1079,6 @@ nav.main-nav img.logo {
                     <div class="element">
                         <h3 class="heading-example">Example</h3>
                         <div class="element-demo">
-                            
                             <h2>Checkout</h1>
                             <div class="checkout-grid">
                                 <div class="checkout-information">
@@ -1006,7 +1163,179 @@ nav.main-nav img.logo {
                                     <a href="" class="button">Continue to payment</a>
                                 </div>
                             </div>
+                        </div>
+                        <h3 class="heading-code">Code</h3>
+                        <div class="code-grid-container">
+                            <div class="code-html">
+                                <h4 class="heading-code">HTML</h4>
+                                <div class="element-code">
+                                    <code>
+                                        <pre>
+&lt;div class="checkout-grid"&gt;
+    &lt;div class="checkout-information"&gt;
+        &lt;h3 class="checkout-step-heading"&gt;Shipping Information&lt;/h3&gt;
+        &lt;form action="" class="checkout-form"&gt;
+            &lt;div class="form-row half"&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-first-name"&gt;First Name&lt;/label&gt;
+                    &lt;input type="text" id="input-first-name" placeholder="Jennifer"&gt;
+                &lt;/div&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-last-name"&gt;Last Name&lt;/label&gt;
+                    &lt;input type="text" id="input-last-name" placeholder="Appleseed"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-row half"&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-email"&gt;Email Address&lt;/label&gt;
+                    &lt;input type="email" id="input-email" placeholder="jennifer.appleseed@gmail.com"&gt;
+                &lt;/div&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-phone"&gt;Phone Number&lt;/label&gt;
+                    &lt;input type="number" id="input-phone" placeholder="+1 778-778-7788"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-row"&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-addres-1"&gt;Address Line #1&lt;/label&gt;
+                    &lt;input type="text" id="input-address-1" placeholder="1234 University Crescent"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-row"&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-addres-2"&gt;Address Line #2&lt;/label&gt;
+                    &lt;input type="text" id="input-address-2" placeholder="Unit #5678"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-row thirds"&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-city"&gt;City&lt;/label&gt;
+                    &lt;input type="text" id="input-city" placeholder="Kamloops"&gt;
+                &lt;/div&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-province"&gt;Province&lt;/label&gt;
+                    &lt;select id="input-province"&gt;
+                        &lt;option value="AB"&gt;Alberta&lt;/option&gt;
+                        &lt;option value="BC"&gt;British Columbia&lt;/option&gt;
+                        &lt;option value="ON"&gt;Ontario&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div class="input-group"&gt;
+                    &lt;label for="input-post-code"&gt;Postal Code&lt;/label&gt;
+                    &lt;input type="text" id="input-post-code" placeholder="V5X 4X9"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div class="checkout-summary"&gt;
+        &lt;h2&gt;Order Summary&lt;/h2&gt;
+        &lt;ul class="checkout-list"&gt;
+            &lt;li class="checkout-item"&gt;
+                &lt;span class="checkout-item-name"&gt;iRobot SuperClean 860&lt;/span&gt;
+                &lt;span class="checkout-item-price"&gt;$379.95&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="checkout-item"&gt;
+                &lt;span class="checkout-item-name"&gt;Shipping&lt;/span&gt;
+                &lt;span class="checkout-item-price"&gt;Free&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="checkout-item"&gt;
+                &lt;span class="checkout-item-name"&gt;Environment Fee&lt;/span&gt;
+                &lt;span class="checkout-item-price"&gt;$1.50&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="checkout-item"&gt;
+                &lt;span class="checkout-item-name"&gt;Estimated Taxes&lt;/span&gt;
+                &lt;span class="checkout-item-price"&gt;$45.57&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="checkout-item total"&gt;
+                &lt;span class="checkout-item-name"&gt;Total&lt;/span&gt;
+                &lt;span class="checkout-item-price"&gt;$427.02&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;a href="" class="button"&gt;Continue to payment&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                        </pre>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="code-css">
+                                <h4 class="heading-code">CSS</h4>
+                                <div class="element-code">
+                                    <code>
+                                        <pre>
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    column-gap: 3em;
+}
 
+.checkout-form .form-row {
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: 1fr;
+}
+
+.checkout-form .form-row.half {
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkout-form .form-row.thirds {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.checkout-form .input-group input, .checkout-form .input-group select {
+    width: 100%;
+}
+
+.checkout-form .input-group {
+    margin-bottom: 2em;
+}
+
+.checkout-summary {
+    font-size: 0.9em;
+    border-radius: 4px;
+    display: block;
+    background: #F5F9FF;
+    padding: 2rem;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    height: 27.5em;
+}
+
+.checkout-summary h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.checkout-summary a.button {
+    display: block;
+    width: 100%;
+}
+
+.checkout-summary ul.checkout-list {
+    margin: 2em 0;
+    padding: 0;
+    list-style: none;
+}
+
+.checkout-summary ul.checkout-list li.checkout-item {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    padding: 0.75em 0;
+}
+
+.checkout-summary ul.checkout-list li.checkout-item.total {
+    border-top: 1px solid #333;
+    margin-top: 0.5em;
+    padding: 1.5em 0 0 0;
+}
+
+.checkout-summary ul.checkout-list li.checkout-item .checkout-item-price {
+    text-align: right;
+}
+                                        </pre> 
+                                    </code>
+                                </div>
+                            </div>
                         </div>
         
                 </section>
