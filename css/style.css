@@ -215,6 +215,10 @@ h3.heading-example, h3.heading-code, h3.heading-description {
     max-width: 100%;
 }
 
+button {
+    cursor:pointer;
+}
+
 /* MAIN NAV SECTION */
 
 nav.main-nav {
@@ -705,7 +709,13 @@ h2.top-brands-title {
 }
 
 .single-product-container {
+    text-decoration: none;
+    color: black;
+}
 
+.single-product-container:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .image-container {
@@ -742,6 +752,84 @@ p.single-product-price {
     font-size: 1.5rem;
     margin-top: 0.75rem;
     font-weight: bold;
+}
+
+/* REVIEWS SECTION */
+
+.reviews-section-container {
+    grid-column: 3 / span 8;
+}
+
+.reviews-section-title {
+}
+
+.reviews-section-header {
+    width: 100%;
+}
+
+.reviews-section-container {
+    display: inline;
+}
+
+.reviews-section-container .reviews-overview ion-icon {
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.reviews-section-container .reviews-overview {
+    display: inline-flex;
+}
+
+.reviews-section-container .reviews-overview p.review-count {
+    margin: auto;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    color: #949494;
+}
+
+.reviews-section-container .reviews-overview p.review-rating {
+    font-size: 1.5rem;
+    margin: auto;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.sorting-container {
+    display: inline-flex;
+    float: right;
+}
+
+.sorting-title {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.drop-btn {
+    color: black;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    background: #F5F9FF;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    border: none;
+}
+
+.sorting-container ion-icon {
+    margin-right: auto;
+}
+
+.reviews-section-container hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviews-summary ion-icon {
+    font-size: 3rem;
+    padding: 2rem;
+    background: #F5F9FF;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    border: none;
 }
 
 /* MEDIA QUERIES */
