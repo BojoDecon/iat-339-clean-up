@@ -489,6 +489,7 @@ h1.product-title {
     font-size: 0.8rem;
     background-color: rgb(69, 69, 69);
     grid-column: span 12 / auto;
+    padding: 1rem;
 }
 
 .footer h4 {
@@ -498,19 +499,24 @@ h1.product-title {
 }
 
 .contact-us a.button {
-    margin: 1.4rem;
+    margin: 0 1.4rem;
     padding: 0.4rem;
+    display:inline-block;
+}
+
+.footer .contact-us ul{
+    padding: 0 1.5rem;
 }
 
 .footer a, .footer li {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 0.5rem 0;
 }
 
 .footer ul {
-    line-height: 1.5rem;
     list-style: none;
-    padding: 0px 1.5rem 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 
