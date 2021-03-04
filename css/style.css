@@ -839,11 +839,14 @@ p.single-product-price {
 }
 
 .reviews-summary {
+    grid-column: 1;
+}
+
+.summary-container {
     padding: 2rem;
     background: #F5F9FF;
     box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
     border: none;
-    grid-column: 1;
 }
 
 .reviews-summary ion-icon {
@@ -899,6 +902,31 @@ p.single-product-price {
     font-size: 1rem;
     width: 75%;
     max-width: 100%;
+}
+
+.user-container {
+    margin-top: 3rem;
+    display: inline-flex;
+}
+
+.username {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.reviews-nav {
+    display: inline-flex;
+    float: right;
+}
+
+.reviews-nav button {
+    border: none;
+    background: none;
+    margin: 0;
+}
+
+.reviews-nav ion-icon{
+    color: #949494;
 }
 
 /* MEDIA QUERIES */

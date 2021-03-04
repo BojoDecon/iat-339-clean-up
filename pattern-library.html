@@ -1699,25 +1699,27 @@ p.single-product-price {
                                 <hr>
                                 <div class="reviews-grid">
                                     <div class="reviews-summary">
-                                        <div class="summary-row">
-                                            <ion-icon name="thumbs-up-outline"></ion-icon>
-                                            <div class="summary-content">
-                                                <p class="reviews-short-quote">"Good build"</p>
-                                                <p class="reviews-percentage">64% of reviewers</p>
+                                        <div class="summary-container">
+                                            <div class="summary-row">
+                                                <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                <div class="summary-content">
+                                                    <p class="reviews-short-quote">"Good build"</p>
+                                                    <p class="reviews-percentage">64% of reviewers</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="summary-row">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                            <div class="summary-content">
-                                                <p class="reviews-short-quote">"Cleans well"</p>
-                                                <p class="reviews-percentage">77% of reviewers</p>
+                                            <div class="summary-row">
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                                <div class="summary-content">
+                                                    <p class="reviews-short-quote">"Cleans well"</p>
+                                                    <p class="reviews-percentage">77% of reviewers</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="summary-row">
-                                            <ion-icon name="volume-mute-outline"></ion-icon>
-                                            <div class="summary-content">
-                                                <p class="reviews-short-quote">"Less noise"</p>
-                                                <p class="reviews-percentage">58% of reviewers</p>
+                                            <div class="summary-row">
+                                                <ion-icon name="volume-mute-outline"></ion-icon>
+                                                <div class="summary-content">
+                                                    <p class="reviews-short-quote">"Less noise"</p>
+                                                    <p class="reviews-percentage">58% of reviewers</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1730,8 +1732,59 @@ p.single-product-price {
                                         <h2 class="reviews-date">Jan 26, 2021</h2>
                                         <h2 class="reviews-header">Quiet and easy to use</h2>
                                         <p class="reviews-quote">The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.</p>
-                                        <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image">
+                                        <div class="user-container">
+                                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image">
+                                            <h2 class="username">Anna Smithers</h2>
+                                        </div>
                                         <hr>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <h2 class="reviews-date">Jan 26, 2021</h2>
+                                        <h2 class="reviews-header">Quiet and easy to use</h2>
+                                        <p class="reviews-quote">The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.</p>
+                                        <div class="user-container">
+                                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image">
+                                            <h2 class="username">Anna Smithers</h2>
+                                        </div>
+                                        <hr>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <h2 class="reviews-date">Jan 26, 2021</h2>
+                                        <h2 class="reviews-header">Quiet and easy to use</h2>
+                                        <p class="reviews-quote">The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.</p>
+                                        <div class="user-container">
+                                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image">
+                                            <h2 class="username">Anna Smithers</h2>
+                                        </div>
+                                        <hr>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <h2 class="reviews-date">Jan 26, 2021</h2>
+                                        <h2 class="reviews-header">Quiet and easy to use</h2>
+                                        <p class="reviews-quote">The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.</p>
+                                        <div class="user-container">
+                                            <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="" class="review-info-image">
+                                            <h2 class="username">Anna Smithers</h2>
+                                        </div>
+                                        <hr>
+                                        <div class="reviews-nav">
+                                            <button><ion-icon name="chevron-back-outline"></ion-icon></button>
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>...</button>
+                                            <button>6</button>
+                                            <button><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1741,7 +1794,118 @@ p.single-product-price {
                                 <h4 class="heading-code">HTML</h4>
                                 <div class="element-code">
                                     <code>
-                                        
+                                        &lt;div class=&quot;reviews-section-container&quot;&gt;<br>
+                                            &lt;h2 class=&quot;reviews-section-title&quot;&gt;Reviews&lt;/h2></br>
+                                            &lt;div class=&quot;reviews-section-header&quot;&gt;<br>
+                                                &lt;div class=&quot;reviews-overview&quot;&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star-half&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;p class=&quot;review-rating&quot;&gt;4.5&lt;/p&gt;<br>
+                                                    &lt;p class=&quot;review-count&quot;&gt;347 reviews&lt;/p&gt;<br>
+                                                &lt;/div&gt;<br>
+                                                &lt;div class=&quot;sorting-container&quot;&gt;<br>
+                                                    &lt;h2 class=&quot;sorting-title&quot;&gt;Sort by&lt;/h2&gt;<br>
+                                                    &lt;button type=&quot;button&quot; class=&quot;drop-btn&quot;&gt;<br>
+                                                        New to Old<br>
+                                                        &lt;ion-icon name=&quot;chevron-down-outline&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;/button&gt;<br>
+                                                &lt;/div&gt;<br>
+                                            &lt;/div&gt;<br>
+                                            &lt;hr&gt;<br>
+                                            &lt;div class=&quot;reviews-grid&quot;&gt;<br>
+                                                &lt;div class=&quot;reviews-summary&quot;&gt;<br>
+                                                    &lt;div class=&quot;summary-container&quot;&gt;<br>
+                                                        &lt;div class=&quot;summary-row&quot;&gt;<br>
+                                                            &lt;ion-icon name=&quot;thumbs-up-outline&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                            &lt;div class=&quot;summary-content&quot;&gt;<br>
+                                                                &lt;p class=&quot;reviews-short-quote&quot;&gt;&quot;Good build&quot;&lt;/p&gt;<br>
+                                                                &lt;p class=&quot;reviews-percentage&quot;&gt;64% of reviewers&lt;/p&gt;<br>
+                                                            &lt;/div&gt;<br>
+                                                        &lt;/div&gt;<br>
+                                                        &lt;div class=&quot;summary-row<br>
+                                                            &lt;ion-icon name=&quot;trash-outline&quot;&gt;&lt;/ion-icon><br>
+                                                            &lt;div class=&quot;summary-content&quot;&gt;<br>
+                                                                &lt;p class=&quot;reviews-short-quote&quot;&gt;&quot;Cleans well&quot;&lt;/p&gt;<br>
+                                                                &lt;p class=&quot;reviews-percentage&quot;&gt;77% of reviewers&lt;/p&gt;<br>
+                                                            &lt;/div&gt;<br>
+                                                        &lt;/div&gt;<br>
+                                                        &lt;div class=&quot;summary-row&quot;&gt;</br>
+                                                            &lt;ion-icon name=&quot;volume-mute-outline&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                            &lt;div class=&quot;summary-content&quot;&gt;</br>
+                                                                &lt;p class=&quot;reviews-short-quote&quot;&gt;&quot;Less noise&quot;&lt;/p&gt;<br>
+                                                                &lt;p class=&quot;reviews-percentage&quot;&gt;58% of reviewers&lt;/p&gt;<br>
+                                                            &lt;/div&gt;<br>
+                                                        &lt;/div&gt;<br>
+                                                    &lt;/div&gt;<br>
+                                                &lt;/div&gt;<br>
+                                                &lt;div class=&quot;reviews-container&quot;&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;h2 class=&quot;reviews-date&quot;&gt;Jan 26, 2021&lt;/h2><br>
+                                                    &lt;h2 class=&quot;reviews-header&quot;&gt;Quiet and easy to use&lt;/h2&gt;<br>
+                                                    &lt;p class=&quot;reviews-quote&quot;&gt;The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.&lt;/p&gt;<br>
+                                                    &lt;div class=&quot;user-container&quot;&gt;<br>
+                                                        &lt;img src=&quot;https://randomuser.me/api/portraits/women/26.jpg&quot; alt=&quot;&quot; class=&quot;review-info-image&quot;&gt;<br>
+                                                        &lt;h2 class=&quot;username&quot;&gt;Anna Smithers&lt;/h2&gt;<br>
+                                                    &lt;/div&gt;<br>
+                                                    &lt;hr&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;h2 class=&quot;reviews-date&quot;&gt;Jan 26, 2021&lt;/h2><br>
+                                                    &lt;h2 class=&quot;reviews-header&quot;&gt;Quiet and easy to use&lt;/h2&gt;<br>
+                                                    &lt;p class=&quot;reviews-quote&quot;&gt;The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.&lt;/p&gt;<br>
+                                                    &lt;div class=&quot;user-container&quot;&gt;/br>
+                                                        &lt;img src=&quot;https://randomuser.me/api/portraits/women/26.jpg&quot; alt=&quot; class=&quot;review-info-image&quote;&gt;<br>
+                                                        &lt;h2 class=&quot;username&quot;&gt;Anna Smithers&lt;/h2&gt;<br>
+                                                    &lt;/div&gt;</br>
+                                                    &lt;hr&gt;</br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;h2 class=&quot;reviews-date&quot;&gt;Jan 26, 2021&lt;/h2&gt;<br>
+                                                    &lt;h2 class=&quot;reviews-header&quot;&gt;Quiet and easy to use&lt;/h2&gt;<br>
+                                                    &lt;p class=&quot;reviews-quote&quot;&gt;The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.&lt;/p&gt;<br>
+                                                    &lt;div class=&quot;user-container&quot;&gt;<br>
+                                                        &lt;img src=&quot;https://randomuser.me/api/portraits/women/26.jpg&quot; alt=&quot;&quot; class=&quot;review-info-image&quote;&gt;<br>
+                                                        &lt;h2 class=&quot;username&quot;&gt;Anna Smithers&lt;/h2&gt;<br>
+                                                    &lt;/div&gt;<br>
+                                                    &lt;hr&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;ion-icon name=&quot;star&quot;&gt;&lt;/ion-icon&gt;<br>
+                                                    &lt;h2 class=&quot;reviews-date&quot;&gt;Jan 26, 2021&lt;/h2&gt;<br>
+                                                    &lt;h2 class=&quot;reviews-header&quot;&gt;Quiet and easy to use&lt;/h2&gt;<br>
+                                                    &lt;p class=&quot;reviews-quote&quot;&gt;The bags are easy to replace and the robot charges quickly. It's so quiet I can barely notice it as it cleans the house while I'm sleeping or working.&lt;/p&gt;<br>
+                                                    &lt;div class=&quot;user-container&quot;&gt;<br>
+                                                        &lt;img src=&quot;https://randomuser.me/api/portraits/women/26.jpg&quot; alt=&quot;&quot; class=&quot;review-info-image&quot;&gt;<br>
+                                                        &lt;h2 class=&quot;username&quot;&gt;Anna Smithers&lt;/h2&gt;<br>
+                                                    &lt;/div&gt;<br>
+                                                    &lt;hr&gt;<br>
+                                                    &lt;div class=&quot;reviews-nav&quot;&gt;<br>
+                                                        &lt;button&gt;&lt;ion-icon name=&quot;chevron-back-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/button&gt;<br>
+                                                        &lt;button&gt;1&lt;/button&gt;<br>
+                                                        &lt;button&gt;2&lt;/button&gt;<br>
+                                                        &lt;button&gt;3&lt;/button&gt;<br>
+                                                        &lt;button&gt;...&lt;/button&gt;<br>
+                                                        &lt;button&gt;6&lt;/button&gt;<br>
+                                                        &lt;button&gt;&lt;ion-icon name=&quot;chevron-forward-outline&quot;&gt;&lt;/ion-icon&gt;&lt;/button&gt;<br>
+                                                    &lt;/div&gt;</br>
+                                                &lt;/div&gt;</br>
+                                            &lt;/div&gt;</br>
+                                        &lt;/div&gt;</br>
                                     </code>
                                 </div>
                             </div>
@@ -1750,7 +1914,170 @@ p.single-product-price {
                                 <div class="element-code">
                                     <code>
                                         <pre>
-</pre>
+.reviews-section-container {
+    grid-column: 3 / span 8;
+}
+
+.reviews-section-title {
+}
+
+.reviews-section-header {
+    width: 100%;
+}
+
+.reviews-section-container {
+    display: inline;
+}
+
+.reviews-section-container .reviews-overview ion-icon {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+.reviews-section-container .reviews-overview {
+    display: inline-flex;
+}
+
+.reviews-section-container .reviews-overview p.review-count {
+    font-size: 1rem;
+    margin: auto;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    color: #949494;
+}
+
+.reviews-section-container .reviews-overview p.review-rating {
+    font-size: 2.5rem;
+    margin: auto;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.sorting-container {
+    display: inline-flex;
+    float: right;
+}
+
+.sorting-title {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.drop-btn {
+    color: black;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    background: #F5F9FF;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    border: none;
+}
+
+.sorting-container ion-icon {
+    margin-right: auto;
+}
+
+.reviews-section-container hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.reviews-summary {
+    grid-column: 1;
+}
+
+.summary-container {
+    padding: 2rem;
+    background: #F5F9FF;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    border: none;
+}
+
+.reviews-summary ion-icon {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.summary-row {
+    margin-bottom: 3rem;
+}
+
+.summary-row:last-of-type {
+    margin-bottom: 0rem;
+}
+
+.summary-content {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.reviews-short-quote {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.reviews-percentage {
+    margin: 0;
+    color: #949494;
+}
+
+.reviews-container {
+    grid-column: 2/5;
+    margin-left: 3rem;
+}
+
+.reviews-container ion-icon {
+    color: #FEDE00;
+    font-size: 1.5rem;
+}
+
+.reviews-date {
+    display: inline;
+    float: right;
+    font-size: 1rem; 
+}
+
+.reviews-header {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+}
+
+.reviews-quote {
+    font-size: 1rem;
+    width: 75%;
+    max-width: 100%;
+}
+
+.user-container {
+    margin-top: 3rem;
+    display: inline-flex;
+}
+
+.username {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.reviews-nav {
+    display: inline-flex;
+    float: right;
+}
+
+.reviews-nav button {
+    border: none;
+    background: none;
+    margin: 0;
+}
+
+.reviews-nav ion-icon{
+    color: #949494;
+}</pre>
                                     </code>
                                 </div>
                             </div>
