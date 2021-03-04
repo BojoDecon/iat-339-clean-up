@@ -780,7 +780,7 @@ p.single-product-price {
 }
 
 .reviews-section-container .reviews-overview ion-icon {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: auto;
 }
 
@@ -789,6 +789,7 @@ p.single-product-price {
 }
 
 .reviews-section-container .reviews-overview p.review-count {
+    font-size: 1rem;
     margin: auto;
     line-height: 1.5rem;
     margin-left: 1rem;
@@ -796,7 +797,7 @@ p.single-product-price {
 }
 
 .reviews-section-container .reviews-overview p.review-rating {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: auto;
     line-height: 1.5rem;
     margin-left: 1rem;
@@ -832,15 +833,83 @@ p.single-product-price {
     margin-bottom: 2rem;
 }
 
-.reviews-summary ion-icon {
-    font-size: 3rem;
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.reviews-summary {
     padding: 2rem;
     background: #F5F9FF;
     box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
     border: none;
+    grid-column: 1;
+}
+
+.reviews-summary ion-icon {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.summary-row {
+    margin-bottom: 3rem;
+}
+
+.summary-row:last-of-type {
+    margin-bottom: 0rem;
+}
+
+.summary-content {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.reviews-short-quote {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.reviews-percentage {
+    margin: 0;
+    color: #949494;
+}
+
+.reviews-container {
+    grid-column: 2/5;
+    margin-left: 3rem;
+}
+
+.reviews-container ion-icon {
+    color: #FEDE00;
+    font-size: 1.5rem;
+}
+
+.reviews-date {
+    display: inline;
+    float: right;
+    font-size: 1rem; 
+}
+
+.reviews-header {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+}
+
+.reviews-quote {
+    font-size: 1rem;
+    width: 75%;
+    max-width: 100%;
 }
 
 /* MEDIA QUERIES */
+
+@media  all and (max-width: 95rem) {
+    .reviews-summary ion-icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 @media  all and (max-width: 1300px) {
     aside nav {
