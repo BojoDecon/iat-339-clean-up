@@ -842,16 +842,16 @@ p.single-product-price {
     grid-column: 1;
 }
 
+.summary-container ion-icon {
+    font-size: 3rem;
+    display: inline-block;
+}
+
 .summary-container {
     padding: 2rem;
     background: #F5F9FF;
     box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
     border: none;
-}
-
-.reviews-summary ion-icon {
-    font-size: 3rem;
-    display: inline-block;
 }
 
 .summary-row {
