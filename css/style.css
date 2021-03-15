@@ -504,16 +504,20 @@ img.review-info-image {
 }
 /* EXPLORE TOP BRANDS */
 
+.explore-top-brands{
+    padding: 6rem 0;
+}
+
 h2.top-brands-title {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 2rem 0px;
 }
 
 .explore-top-brands-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: 0px;
+    margin: 0 8rem;
 }
 
 .top-brands-top-row {
@@ -544,6 +548,12 @@ h2.top-brands-title {
 }
 
 /* PRODUCT GRID VIEW */
+
+h2.product-list-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 500;
+}
 
 .product-grid-view-container {
     display: grid;
@@ -576,7 +586,7 @@ h2.top-brands-title {
 
 h2.single-product-title {
     margin-bottom: 0.75rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: lighter;
 }
 
@@ -596,6 +606,10 @@ p.single-product-price {
     font-size: 1.5rem;
     margin-top: 0.75rem;
     font-weight: bold;
+}
+
+.product-list-sorting{
+    padding: 1.8rem 0;
 }
 
 /* REVIEWS SECTION */
@@ -856,6 +870,51 @@ p.single-product-price {
 .overhang-img {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+/* SIDE FILTER FOR PRODUCT LIST/GRID PAGE */
+.side-filter-container {
+    padding: 2rem;
+    background: #F5F9FF;
+    box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
+    border: none;
+    margin-right: 3rem;
+}
+
+h3.side-filter-heading{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.side-filter-heading ion-icon{
+    float: right;
+}
+
+.filter-list{
+    list-style: none;
+    padding: 0 0.9rem;
+}
+
+.filter-list li{
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+}
+
+.filter-list-selected{
+    font-weight: 800;
+}
+
+.filter-checklist label{
+    font-size: 0.9rem;
+}
+
+.filter-checklist input {
+    display: inline-block;
+    margin: .4rem;
+}
+
+.checklist-option{
+    padding: 0.3rem 0.5rem;
 }
 
 /* MEDIA QUERIES */
