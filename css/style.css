@@ -781,6 +781,36 @@ p.single-product-price {
     font-weight: 500;
 }
 
+/* BREADCRUMB */
+.breadcrumb ul{
+    list-style: none;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+.breadcrumb li {
+    float: left;
+    padding-right: 1rem;
+}
+
+.breadcrumb li a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.breadcrumb li::before {
+    content: ">";
+    padding-right: 1rem;
+}
+    
+.breadcrumb li:first-child::before {
+    content: "";
+    padding: 0;
+}
+/* Bread crumb references: https://css-tricks.com/triangle-breadcrumbs/ 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Breadcrumb_Navigation */
+
 /* MEDIA QUERIES */
 
 @media  all and (max-width: 95rem) {
