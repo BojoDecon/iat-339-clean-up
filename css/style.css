@@ -188,14 +188,14 @@ nav.main-nav .mobile {
 }
 
 .product-info-right {
-    grid-column: 8 / 12;
+    grid-column: 8 / 13;
     margin-top: 2rem;
 }
 
-h1.product-title {
-    font-size: 1.75rem;
+h2.product-title {
+    font-size: 2rem;
     margin: 2rem 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .product-details h2.price {
@@ -207,7 +207,6 @@ h1.product-title {
 .product-details a.button {
     display: block;
     font-size: 1rem;
-    max-width: 17.5rem;
     margin: 1rem 0;
 }
 
@@ -236,7 +235,6 @@ h1.product-title {
 }
 
 .shipping-details p {
-    max-width: 17.5rem;
     font-size: 0.8rem;
     margin-bottom: 0;
 }
@@ -760,8 +758,27 @@ p.single-product-price {
     margin: 0;
 }
 
-.reviews-nav ion-icon{
+.reviews-nav ion-icon {
     color: #949494;
+}
+
+/* MISCELLANEOUS */
+
+.nav-hierarchy {
+    font-size: 1rem;
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+.nav-hierarchy ion-icon {
+    vertical-align: middle;
+    margin: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.headers {
+    font-size: 1.75rem;
+    font-weight: 500;
 }
 
 /* MEDIA QUERIES */
