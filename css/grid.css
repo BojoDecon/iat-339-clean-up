@@ -10,6 +10,12 @@
     max-width: 90%;
 }
 
+.container.fluid {
+    width: 100%;
+    max-width: 100%;
+    column-gap: 0;
+}
+
 .container .col-1 {
     grid-column: span 1;
 }
