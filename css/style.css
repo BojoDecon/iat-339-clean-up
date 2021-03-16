@@ -776,26 +776,6 @@ p.single-product-price {
     color: #949494;
 }
 
-/* MISCELLANEOUS */
-
-.nav-hierarchy {
-    font-size: 1rem;
-    margin-top: 4rem;
-    max-width: 100%;
-}
-
-.nav-hierarchy ion-icon {
-    vertical-align: middle;
-    margin: 0.75rem;
-    margin-top: 0.5rem;
-}
-
-.headers {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 10rem;
-}
-
 /* FEATURES */
 
 .half-img {
@@ -929,6 +909,7 @@ p.single-product-price {
     width: 100%;
     height: 20rem;
     background-color: #FAFAFB;
+    margin-bottom: 10rem;
 }
 
 .feature-6 .feature-content {
@@ -989,6 +970,37 @@ h3.side-filter-heading{
 
 .checklist-option{
     padding: 0.3rem 0.5rem;
+}
+
+/* MISCELLANEOUS */
+
+.nav-hierarchy {
+    font-size: 1rem;
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+.nav-hierarchy ion-icon {
+    vertical-align: middle;
+    margin: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.headers {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10rem;
+}
+
+.suggested-items-headers {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.divider {
+    height: 5rem;
 }
 
 /* MEDIA QUERIES */
