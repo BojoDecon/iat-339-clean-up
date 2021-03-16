@@ -521,6 +521,8 @@ h2.top-brands-title {
 }
 
 .explore-top-brands .bottom-row {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 2rem 0;
 }
