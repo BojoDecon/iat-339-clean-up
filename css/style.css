@@ -1098,6 +1098,11 @@ h3.side-filter-heading{
     margin: 0.75rem;
 }
 
+.breadcrumbs-btn {
+    text-decoration: none;
+    color: black;
+}
+
 .headers {
     font-size: 1.5rem;
     font-weight: 500;
