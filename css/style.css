@@ -531,6 +531,10 @@ h2.product-list-title {
     font-weight: 500;
 }
 
+.product-grid-view-container {
+    column-gap: 3rem;
+}
+
 .single-product-container {
     text-decoration: none;
     color: black;
@@ -1122,15 +1126,22 @@ h3.side-filter-heading{
 
 /* MEDIA QUERIES */
 
-@media  all and (max-width: 95rem) {
+@media  all and (max-width: 1520px) {
     .reviews-summary ion-icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .summary-content {
+        text-align: center;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media  all and (max-width: 1090px) {
+@media  all and (max-width: 1000px) {
     
 }
 
