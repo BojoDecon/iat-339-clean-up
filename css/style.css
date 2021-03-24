@@ -118,6 +118,7 @@ img {
     max-width: 100%;
     width: 100%;
     min-width: 0;
+    display: block;
 }
 
 /* MAIN NAV SECTION */
@@ -1252,7 +1253,7 @@ h3.side-filter-heading{
         width: 80%;
         padding-top: 4%;
         padding-bottom: 6%; 
-}
+    }
 
     .feature-content-container-background {
         width: 100%;
@@ -1264,6 +1265,7 @@ h3.side-filter-heading{
     }
 
     .overhang-img-container {
+        display: block;
         width: 100%;
         left: 0;
     }
@@ -1277,10 +1279,10 @@ h3.side-filter-heading{
     .overhang-img {
         margin: 0;
         width: 100%;
-        display: block;
+        height: auto;
     }
 
-    .overhang-img:last-of-type {
+    img.overhang-img {
         display: none;
     }
 
