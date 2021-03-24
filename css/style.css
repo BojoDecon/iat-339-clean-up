@@ -116,6 +116,8 @@ h1.page-title {
 
 img {
     max-width: 100%;
+    width: 100%;
+    min-width: 0;
 }
 
 /* MAIN NAV SECTION */
@@ -1090,6 +1092,41 @@ h3.side-filter-heading{
     font-size: 0.9rem;
 }
 
+/* SPECIFICATIONS */
+.spec-column-white {
+}
+
+.spec-column-blue {
+    background-color: #F5F9FF;
+}
+
+.spec-column-white p{
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 0.9rem;
+}
+
+.spec-column-white p:last-of-type{
+    font-weight: 400;
+    float: right;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.spec-column-blue p{
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 0.9rem;
+}
+
+.spec-column-blue p:last-of-type{
+    font-weight: 400;
+    float: right;
+    display: inline-block;
+    margin-right: 3rem;
+}
 
 /* MISCELLANEOUS */
 
