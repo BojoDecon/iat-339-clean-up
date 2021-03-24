@@ -363,6 +363,10 @@ h2.product-title {
     padding: 0.5rem 0;
 }
 
+.footer a:hover {
+    text-decoration: underline;
+}
+
 .footer ul {
     list-style: none;
     padding: 0 1rem;
@@ -510,6 +514,13 @@ h2.top-brands-title {
     margin: 2rem 0px 4rem 0;
 }
 
+.brand:hover{
+    transform: scale(1.02);
+	transition-property: transform; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
 .explore-top-brands .bottom-row {
     display: flex;
     justify-content: center;
@@ -543,9 +554,11 @@ h2.product-list-title {
     color: black;
 }
 
-.single-product-container:hover {
-    text-decoration: none;
-    color: black;
+.single-product-container:hover img{
+    transform: scale(1.02);
+	transition-property: transform; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-in-out;
 }
 
 h2.single-product-title {
@@ -564,11 +577,13 @@ h2.single-product-title {
     margin: 0;
     vertical-align: top;
     font-size: 0.75rem;
+    color:black;
 }
 
 p.single-product-price {
     font-size: 1.25rem;
     margin-top: 0;
+    color:black;
 }
 
 .product-list-sorting {
