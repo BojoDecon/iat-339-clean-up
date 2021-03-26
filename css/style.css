@@ -1200,7 +1200,7 @@ h3.side-filter-heading{
     }
 }
 
-@media  all and (max-width: 1125px) {
+@media  all and (max-width: 950px) {
     .image-gallery {
         grid-column: 1 / 13;
     }
