@@ -1162,6 +1162,8 @@ h3.side-filter-heading{
 .breadcrumbs-btn {
     text-decoration: none;
     color: black;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .headers {
@@ -1367,8 +1369,4 @@ h3.side-filter-heading{
     .cart-item-description, .cart-item-actions {
         padding: 0;
     }
-}
-
-@media  all and (max-width: 750px) {
-    
 }
