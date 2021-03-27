@@ -353,10 +353,18 @@
 						</div>
 						<div class="sorting-container">
 							<h2 class="sorting-title">Sort by</h2>
-							<button type="button" class="drop-btn">
-								New to Old
-								<ion-icon name="chevron-down-outline"></ion-icon>
-							</button>
+							<div class="drop-down">
+								<button type="button" onclick="dropDownRating()" class="drop-btn">
+									New to Old
+									<ion-icon name="chevron-down-outline"></ion-icon>
+								</button>
+								<div id="sort-by-dropdown-rating" class="dropdown-content">
+									<p>New to old</p>
+									<p>Highest rating</p>
+									<p>Lowest rating</p>
+									<p>Old to new</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<hr>
@@ -604,7 +612,20 @@
 			</div>
 		</div>
 	</footer>
-
+   	<script>
+		window.onclick = function(event) {
+			if (!event.target.matches('.drop-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
 	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 	<script src="js/script.js"></script> 
 </body>

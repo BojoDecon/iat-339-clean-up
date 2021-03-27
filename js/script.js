@@ -55,22 +55,12 @@ featuresBtn.addEventListener("click", function(){
     }
 });
 
-
-/*Product list Sort By Dropdown*/
+/*Product list and Single product Sort By Dropdown*/
 /*Reference: https://www.w3schools.com/howto/howto_js_dropdown.asp*/
-function dropDown() {
-    document.getElementById("sort-by-dropdown").classList.toggle("show");
+function dropDownPrice() {
+    document.getElementById("sort-by-dropdown-price").classList.toggle("show");
 }
-  
-window.onclick = function(event) {
-    if (!event.target.matches('.drop-btn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
+
+function dropDownRating() {
+    document.getElementById("sort-by-dropdown-rating").classList.toggle("show");
 }
