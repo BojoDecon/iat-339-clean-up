@@ -26,15 +26,15 @@ categoryBtn.addEventListener("click", function(){
     this.classList.toggle("active");
     
     let panel = this.nextElementSibling;
-    let iconIndex="category-chevron";
+    let icon ="category-chevron";
 
     if (panel.style.display === "block"){
-        document.getElementById(iconIndex).setAttribute("name", "chevron-down-outline");
+        document.getElementById(icon).setAttribute("name", "chevron-down-outline");
         panel.style.display = "none";
         
     } else {
         panel.style.display = "block";
-        document.getElementById(iconIndex).setAttribute("name", "chevron-up-outline");
+        document.getElementById(icon).setAttribute("name", "chevron-up-outline");
     }
 });
 /*Features accordion*/
@@ -43,15 +43,49 @@ featuresBtn.addEventListener("click", function(){
     this.classList.toggle("active");
     
     let panel = this.nextElementSibling;
-    let iconIndex="features-chevron";
+    let icon ="features-chevron";
 
     if (panel.style.display === "block"){
-        document.getElementById(iconIndex).setAttribute("name", "chevron-down-outline");
+        document.getElementById(icon).setAttribute("name", "chevron-down-outline");
         panel.style.display = "none";
         
     } else {
         panel.style.display = "block";
-        document.getElementById(iconIndex).setAttribute("name", "chevron-up-outline");
+        document.getElementById(icon).setAttribute("name", "chevron-up-outline");
+    }
+});
+/*Price range accordion*/
+let priceRangeBtn = document.getElementById("price-range-btn");
+priceRangeBtn.addEventListener("click", function(){
+    this.classList.toggle("active");
+    
+    let panel = this.nextElementSibling;
+    let icon ="price-range-chevron";
+
+    if (panel.style.display === "block"){
+        document.getElementById(icon).setAttribute("name", "chevron-down-outline");
+        panel.style.display = "none";
+        
+    } else {
+        panel.style.display = "block";
+        document.getElementById(icon).setAttribute("name", "chevron-up-outline");
+    }
+});
+/*Customer rating accordion*/
+let customerRatingBtn = document.getElementById("customer-rating-btn");
+customerRatingBtn.addEventListener("click", function(){
+    this.classList.toggle("active");
+    
+    let panel = this.nextElementSibling;
+    let icon ="customer-rating-chevron";
+
+    if (panel.style.display === "block"){
+        document.getElementById(icon).setAttribute("name", "chevron-down-outline");
+        panel.style.display = "none";
+        
+    } else {
+        panel.style.display = "block";
+        document.getElementById(icon).setAttribute("name", "chevron-up-outline");
     }
 });
 

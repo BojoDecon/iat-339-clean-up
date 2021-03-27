@@ -119,23 +119,23 @@
                         <div class="side-filter-panel">
                             <div class="filter-checklist">
                                 <div class="checklist-option">
-                                    <input type="checkbox" id="option-A" name="option-A">
+                                    <input type="checkbox" id="option-A" name="feature" checked>
                                     <label for="option-A">Smart charging</label>
                                 </div>
                                 <div class="checklist-option">
-                                    <input type="checkbox" id="option-B" name="option-B">
+                                    <input type="checkbox" id="option-B" name="feature" checked>
                                     <label for="option-B">Auto dirt disposal</label>
                                 </div>
                                 <div class="checklist-option">
-                                    <input type="checkbox" id="option-C" name="option-C">
+                                    <input type="checkbox" id="option-C" name="feature" checked>
                                     <label for="option-C">App control</label>
                                 </div>
                                 <div class="checklist-option">
-                                    <input type="checkbox" id="option-D" name="option-D">
+                                    <input type="checkbox" id="option-D" name="feature">
                                     <label for="option-D">Allergen filter</label>
                                 </div>
                                 <div class="checklist-option">
-                                    <input type="checkbox" id="option-E" name="option-E">
+                                    <input type="checkbox" id="option-E" name="feature">
                                     <label for="option-E">Multi surface</label>
                                 </div>
                             </div>
@@ -143,15 +143,55 @@
                     </div>
 
                     <div>
-                        <button class="side-filter-btn">Price<ion-icon name="chevron-down-outline"></ion-icon></button>
+                        <button class="side-filter-btn" id="price-range-btn">Price range
+                            <ion-icon id="price-range-chevron" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="side-filter-panel">
+                            <div class="filter-checklist">
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-A" name="price-max">
+                                    <label for="price-A">300.00 USD</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-B" name="price-max" checked>
+                                    <label for="price-B">400.00 USD</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-C" name="price-max">
+                                    <label for="price-C">500.00 USD</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-D" name="price-max">
+                                    <label for="price-D">600.00 USD</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-E" name="price-max">
+                                    <label for="price-E">700.00 USD</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-F" name="price-max">
+                                    <label for="price-F">800.00 USD</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="radio" id="price-G" name="price-max">
+                                    <label for="price-G">900.00+ USD</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div>
-                        <button class="side-filter-btn">Warranty<ion-icon name="chevron-down-outline"></ion-icon></button>
-                    </div>
-                    
-                    <div>
-                        <button class="side-filter-btn">Customer rating<ion-icon name="chevron-down-outline"></ion-icon></button>
+                        <button class="side-filter-btn" id="customer-rating-btn">Customer rating
+                            <ion-icon id="customer-rating-chevron" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="side-filter-panel">
+                            <ul class="filter-list">
+                                <li class="filter-list-selected">4 stars & up</li>
+                                <li>3 stars & up</li>
+                                <li>2 stars & up</li>
+                                <li>1 star & up</li>
+                            </ul>
+                        </div>
                     </div>
                         
                 </div>
@@ -449,7 +489,6 @@
                 </div>
             </div>
         </section>
-        
     </main>
 
     <!--Footer-->
@@ -529,6 +568,9 @@
 			</div>
         </div>
     </footer>
+
+    <!--Sort By dropdown script-->
+    <!--Reference: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
     <script>
         window.onclick = function(event) {
             if (!event.target.matches('.drop-btn')) {
