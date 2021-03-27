@@ -1426,4 +1426,16 @@ p.single-product-price {
     .cart-item-description, .cart-item-actions {
         padding: 0;
     }
+
+    .brand img{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .product-grid-view-container {
+        column-gap: 1rem;
+        margin: auto;
+    }
 }
