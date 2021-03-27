@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    
+    <!--Main Navigation-->
     <header>
         <nav class="main-nav">
             <div class="desktop">
@@ -60,10 +61,8 @@
     </header>
 
     <main>
-        <section class="masthead">
-            
-        </section>
         <div class="container">
+            <!--Breadcrumbs-->
 			<div class="col-12">
                 <div class="breadcrumbs">
                     <a href="index.html" class="breadcrumbs-btn">Home</a>
@@ -75,69 +74,90 @@
                 <h2 class="product-list-title">Pet friendly vacuums</h2>
             </div>
 
+            <!--Sort By Filter-->
             <div class="col-12">
                 <div>
                     <div class="sorting-container product-list-sorting">
                         <h2 class="sorting-title">Sort by</h2>
-                        <button type="button" class="drop-btn">
-                            Best Selling
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                        </button>
+                        <div class="drop-down">
+                            <button type="button" onclick="dropDown()" class="drop-btn">Best selling
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <div id="sort-by-dropdown" class="dropdown-content">
+                                <p>Best selling</p>
+                                <p>Highest price</p>
+                                <p>Lowest price</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-
+            <!--Side Filter Panel-->
             <div class="col-2">
                 <div class="side-filter-container">
+
                     <div>
-                        <h3 class="side-filter-heading">Categories<ion-icon name="chevron-up-outline"></ion-icon></h3>
-                        <ul class="filter-list">
-                            <li>Battery powered</li>
-                            <li>Self charging</li>
-                            <li class="filter-list-selected">Pet Friendly</li>
-                            <li>Bagless vacuums</li>
-                            <li>Bagged vaccums</li>
-                        </ul>
+                        <button class="side-filter-btn" id="category-btn">Categories
+                            <ion-icon id="category-chevron" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="side-filter-panel">
+                            <ul class="filter-list">
+                                <li>Battery powered</li>
+                                <li>Self charging</li>
+                                <li class="filter-list-selected">Pet Friendly</li>
+                                <li>Bagless vacuums</li>
+                                <li>Bagged vaccums</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div>
-                        <h3 class="side-filter-heading">Features<ion-icon name="chevron-up-outline"></ion-icon></h3>
-                        <div class="filter-checklist">
-                            <div class="checklist-option">
-                                <input type="checkbox" id="option-A" name="option-A">
-                                <label for="option-A">Option A</label>
-                            </div>
-                            <div class="checklist-option">
-                                <input type="checkbox" id="option-B" name="option-B">
-                                <label for="option-B">Option B</label>
-                            </div>
-                            <div class="checklist-option">
-                                <input type="checkbox" id="option-C" name="option-C">
-                                <label for="option-C">Option C</label>
-                            </div>
-                            <div class="checklist-option">
-                                <input type="checkbox" id="option-D" name="option-D">
-                                <label for="option-D">Option D</label>
-                            </div>
-                            <div class="checklist-option">
-                                <input type="checkbox" id="option-E" name="option-E">
-                                <label for="option-E">Option E</label>
+                        <button class="side-filter-btn" id="features-btn">Features
+                            <ion-icon id="features-chevron" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="side-filter-panel">
+                            <div class="filter-checklist">
+                                <div class="checklist-option">
+                                    <input type="checkbox" id="option-A" name="option-A">
+                                    <label for="option-A">Smart charging</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="checkbox" id="option-B" name="option-B">
+                                    <label for="option-B">Auto dirt disposal</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="checkbox" id="option-C" name="option-C">
+                                    <label for="option-C">App control</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="checkbox" id="option-D" name="option-D">
+                                    <label for="option-D">Allergen filter</label>
+                                </div>
+                                <div class="checklist-option">
+                                    <input type="checkbox" id="option-E" name="option-E">
+                                    <label for="option-E">Multi surface</label>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <h3 class="side-filter-heading">Price<ion-icon name="chevron-down-outline"></ion-icon></h3>
+                        <button class="side-filter-btn">Price<ion-icon name="chevron-down-outline"></ion-icon></button>
                     </div>
+                    
                     <div>
-                        <h3 class="side-filter-heading">Warranty<ion-icon name="chevron-down-outline"></ion-icon></h3>
+                        <button class="side-filter-btn">Warranty<ion-icon name="chevron-down-outline"></ion-icon></button>
                     </div>
+                    
                     <div>
-                        <h3 class="side-filter-heading">Customer rating<ion-icon name="chevron-down-outline"></ion-icon></h3>
+                        <button class="side-filter-btn">Customer rating<ion-icon name="chevron-down-outline"></ion-icon></button>
                     </div>
                         
                 </div>
             </div>
 
+            <!--Product List/Grid-->
             <div class="col-10">
                 <div class="container product-grid-view-container">
                     <div class="col-4 col-sm-6">
@@ -399,6 +419,7 @@
             </div>
         </div>
 
+        <!--Top Brands-->
         <section class="explore-top-brands">
             <div class="container">
                 <div class="col-12">
@@ -431,6 +452,7 @@
         
     </main>
 
+    <!--Footer-->
     <footer class="footer">
         <div class="footer-top-row">
 			<div class="container">
@@ -508,6 +530,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script> 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 </body>
