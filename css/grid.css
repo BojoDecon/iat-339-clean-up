@@ -67,7 +67,7 @@
     grid-column: span 12;
 }
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 930px) {
     .container [class^="col-"] {
         grid-column: span 12;
         /* Reference: https://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
