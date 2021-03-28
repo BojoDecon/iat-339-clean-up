@@ -619,6 +619,7 @@ p.single-product-price {
     line-height: 1.5rem;
     margin-left: 1rem;
     color: #949494;
+    white-space: nowrap;
 }
 
 .reviews-section-container .reviews-overview p.review-rating {
@@ -1048,6 +1049,7 @@ p.single-product-price {
 .drop-down{
     position: relative;
     display: inline-block;
+    margin: auto;
 }
 
 .dropdown-content {
@@ -1208,6 +1210,7 @@ p.single-product-price {
     margin-top: 4rem;
     max-width: 100%;
     text-decoration: none;
+    line-height: 2rem;
 }
 
 .breadcrumbs ion-icon {
@@ -1242,7 +1245,7 @@ p.single-product-price {
 
 /* MEDIA QUERIES */
 
-@media  all and (max-width: 1520px) {
+@media  all and (max-width: 1320px) {
     .reviews-summary ion-icon {
         display: block;
         margin-left: auto;
@@ -1254,16 +1257,6 @@ p.single-product-price {
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
-}
-
-@media  all and (max-width: 950px) {
-    .image-gallery {
-        grid-column: 1 / 13;
-    }
-
-    .product-info-right {
-        grid-column: 1 / 13;
     }
 }
 
@@ -1387,6 +1380,16 @@ p.single-product-price {
     }
 }
 
+@media  all and (max-width: 950px) {
+    .image-gallery {
+        grid-column: 1 / 13;
+    }
+
+    .product-info-right {
+        grid-column: 1 / 13;
+    }
+}
+
 @media  all and (max-width: 860px) {
     nav.main-nav .desktop {
         display: none;
@@ -1437,5 +1440,72 @@ p.single-product-price {
     .product-grid-view-container {
         column-gap: 1rem;
         margin: auto;
+    }
+}
+
+@media  all and (max-width: 800px) {
+    .reviews-section-container .reviews-overview {
+        display: block;
+    }
+
+    .reviews-section-container .reviews-overview p.review-count {
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .reviews-section-container .reviews-overview p.review-rating {
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .reviews-section-container .reviews-overview ion-icon {
+        font-size: 2rem;
+    }
+
+    .reviews-section-container .sorting-container {
+        float: none;
+        margin-top: 1rem;
+    }
+
+    .reviews-summary {
+        grid-column: 1/5;
+    }
+
+    .summary-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+    }
+
+    .summary-row {
+        margin: 0;
+    }
+
+    .reviews-container {
+        grid-column: 1/5;
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media  all and (max-width: 500px) {
+    .summary-container {
+        display: block;
+    }
+
+    .summary-row:first-of-type {
+        margin-bottom: 2rem;
+    }
+
+    .summary-row:last-of-type {
+        margin-top: 2rem;
+    }
+}
+
+@media  all and (max-width: 300px) {
+    .reviews-date {
+        display: block;
+        float: none
     }
 }
