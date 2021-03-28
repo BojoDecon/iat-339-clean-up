@@ -94,3 +94,9 @@
     }
 
 }
+
+@media all and (max-width: 450px) {
+    .container .col-sm-6 {
+        grid-column: span 12;
+    }
+}

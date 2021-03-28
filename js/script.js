@@ -18,6 +18,7 @@ function imageShowcase4() {
 	document.getElementById("image-showcase").src = "assets/img/product/vac4.jpg";
 }
 
+
 /*Product list side filter accordion*/
 /*Reference: https://www.w3schools.com/howto/howto_js_accordion.asp*/
 /*Category accordion*/
