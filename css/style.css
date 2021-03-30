@@ -969,7 +969,7 @@ p.single-product-price {
     border: none;
 }
 
-.side-filter-btn{
+.side-filter-btn {
     padding: 0.5rem;
     background: #F5F9FF;
     border: none;
@@ -1320,6 +1320,20 @@ p.single-product-price {
     }
 }
 
+@media  all and (max-width: 1110px) {
+    .side-filter-btn p {
+        grid-column: 1/3;
+        margin: auto;
+        text-align: center;
+    }
+
+    .side-filter-btn ion-icon {
+        grid-column: 1/3;
+        position: relative;
+        margin: auto;
+    }
+}   
+
 @media  all and (max-width: 1050px) {
     .review-element:not(.active){
         display: none;
@@ -1501,6 +1515,21 @@ p.single-product-price {
     .product-grid-view-container {
         column-gap: 1rem;
         margin: auto;
+    }
+
+    .side-filter-btn p {
+        grid-column: 1;
+        margin: 0;
+        text-align: left;
+    }
+
+    .side-filter-btn ion-icon {
+        grid-column: 1;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0 0.5rem;
     }
 }
 
