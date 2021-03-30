@@ -158,3 +158,32 @@ function mobileMenu() {
         x.style.display = "block";
     }
 }
+
+/* To show dropdown selection properly */
+function newToOld() {
+    document.getElementById("dropdown").innerHTML = 'New to old <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function highestRating() {
+    document.getElementById("dropdown").innerHTML = 'Highest rating <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function lowestRating() {
+    document.getElementById("dropdown").innerHTML = 'Lowest rating <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function oldToNew() {
+    document.getElementById("dropdown").innerHTML = 'Old to new <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function bestSelling() {
+    document.getElementById("dropdown").innerHTML = 'Best selling <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function highestPrice() {
+    document.getElementById("dropdown").innerHTML = 'Highest price <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function lowestPrice() {
+    document.getElementById("dropdown").innerHTML = 'Lowest price <ion-icon name="chevron-down-outline"></ion-icon>';
+}

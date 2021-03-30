@@ -1040,7 +1040,7 @@ p.single-product-price {
     position: relative;
 }
 
-.side-filter-btn p{
+.side-filter-btn p {
     margin: 0;
 }
 
@@ -1595,10 +1595,9 @@ p.single-product-price {
     .side-filter-btn ion-icon {
         grid-column: 1;
         position: absolute;
-        right: 0;
         top: 50%;
         transform: translate(0, -50%);
-        margin: 0 0.5rem;
+        right: 0;
     }
 }
 

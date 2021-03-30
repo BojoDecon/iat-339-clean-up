@@ -87,13 +87,13 @@
                     <div class="sorting-container product-list-sorting">
                         <h2 class="sorting-title">Sort by</h2>
                         <div class="drop-down">
-                            <button type="button" onclick="dropDownPrice()" class="drop-btn">Best selling
-                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            <button type="button" onclick="dropDownPrice()" class="drop-btn" id="dropdown">Best selling
+                                <ion-icon name="chevron-down-outline" id="icon"></ion-icon>
                             </button>
                             <div id="sort-by-dropdown-price" class="dropdown-content">
-                                <p>Best selling</p>
-                                <p>Highest price</p>
-                                <p>Lowest price</p>
+                                <p onclick="bestSelling();">Best selling</p>
+                                <p onclick="highestPrice();">Highest price</p>
+                                <p onclick="lowestPrice();">Lowest price</p>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,8 @@
                 <div class="side-filter-container">
 
                     <div>
-                        <button class="side-filter-btn" id="category-btn">Categories
+                        <button class="side-filter-btn" id="category-btn">
+                            <p>Categories</p>
                             <ion-icon id="category-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
@@ -120,7 +121,8 @@
                     </div>
                     
                     <div>
-                        <button class="side-filter-btn" id="features-btn">Features
+                        <button class="side-filter-btn" id="features-btn">
+                            <p>Features</p>
                             <ion-icon id="features-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
@@ -150,7 +152,8 @@
                     </div>
 
                     <div>
-                        <button class="side-filter-btn" id="price-range-btn">Price range
+                        <button class="side-filter-btn" id="price-range-btn">
+                            <p>Price range</p>
                             <ion-icon id="price-range-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
@@ -188,7 +191,8 @@
                     </div>
                     
                     <div>
-                        <button class="side-filter-btn" id="customer-rating-btn">Customer rating
+                        <button class="side-filter-btn" id="customer-rating-btn">
+                            <p>Customer rating</p>
                             <ion-icon id="customer-rating-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
