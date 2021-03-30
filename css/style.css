@@ -1223,6 +1223,17 @@ p.single-product-price {
     font-weight: 500;
 }
 
+.checkout-information-box {
+    border: 2px solid #C4C4C4;
+    padding: 1rem;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.checkout-information-box p {
+    margin: 0.5rem 0;
+}
+
 .cart-item-expanded {
     border-top: 1px solid #CACACA;
 }
