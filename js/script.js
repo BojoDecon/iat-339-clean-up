@@ -18,6 +18,23 @@ function imageShowcase4() {
 	document.getElementById("image-showcase").src = "assets/img/product/vac4.jpg";
 }
 
+/* Reviews Section page selection*/
+
+function reviewsPage1() {
+    var reviewsPage1 = document.getElementById("reviews-1");
+    reviewsPage1.classList.remove("hidden");
+
+    var reviewsPage2 = document.getElementById("reviews-2");
+    reviewsPage2.classList.add("hidden");
+}
+
+function reviewsPage2() {
+    var reviewsPage1 = document.getElementById("reviews-1");
+    reviewsPage1.classList.add("hidden");
+
+    var reviewsPage2 = document.getElementById("reviews-2");
+    reviewsPage2.classList.remove("hidden");
+}
 
 /*Product list side filter accordion*/
 /*Reference: https://www.w3schools.com/howto/howto_js_accordion.asp*/
@@ -38,6 +55,7 @@ categoryBtn.addEventListener("click", function(){
         document.getElementById(icon).setAttribute("name", "chevron-up-outline");
     }
 });
+
 /*Features accordion*/
 let featuresBtn = document.getElementById("features-btn");
 featuresBtn.addEventListener("click", function(){
@@ -55,6 +73,7 @@ featuresBtn.addEventListener("click", function(){
         document.getElementById(icon).setAttribute("name", "chevron-up-outline");
     }
 });
+
 /*Price range accordion*/
 let priceRangeBtn = document.getElementById("price-range-btn");
 priceRangeBtn.addEventListener("click", function(){
@@ -72,6 +91,7 @@ priceRangeBtn.addEventListener("click", function(){
         document.getElementById(icon).setAttribute("name", "chevron-up-outline");
     }
 });
+
 /*Customer rating accordion*/
 let customerRatingBtn = document.getElementById("customer-rating-btn");
 customerRatingBtn.addEventListener("click", function(){

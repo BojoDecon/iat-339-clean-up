@@ -1261,6 +1261,10 @@ p.single-product-price {
     height: 5rem;
 }
 
+.hidden {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 
 @media  all and (max-width: 1320px) {
