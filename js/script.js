@@ -147,3 +147,21 @@ function dropDownPrice() {
 function dropDownRating() {
     document.getElementById("sort-by-dropdown-rating").classList.toggle("show");
 }
+
+/* Drop down buttons changing the dropdown displayed text */
+
+function newToOld() {
+    document.getElementById("dropdown").innerHTML = 'New to old <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function highestRating() {
+    document.getElementById("dropdown").innerHTML = 'Highest rating <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function lowestRating() {
+    document.getElementById("dropdown").innerHTML = 'Lowest rating <ion-icon name="chevron-down-outline"></ion-icon>';
+}
+
+function oldToNew() {
+    document.getElementById("dropdown").innerHTML = 'Old to new <ion-icon name="chevron-down-outline"></ion-icon>';
+}
