@@ -209,6 +209,8 @@ nav.main-nav .mobile {
 .product-info-right {
     grid-column: 2;
     margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h2.product-title {
