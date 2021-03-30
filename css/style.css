@@ -979,10 +979,21 @@ p.single-product-price {
     text-align: left;
     font-size: 0.95rem;
     font-weight: 600;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    position: relative;
+}
+
+.side-filter-btn p{
+    margin: 0;
 }
 
 .side-filter-btn ion-icon{
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0 0.5rem;
 }
 
 .side-filter-panel {
