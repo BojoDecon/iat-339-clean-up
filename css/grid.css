@@ -92,7 +92,6 @@
     .container .col-sm-9 {
         grid-column: span 9;
     }
-
 }
 
 @media all and (max-width: 450px) {
