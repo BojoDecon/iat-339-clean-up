@@ -99,7 +99,10 @@
 }
 
 @media all and (max-width: 450px) {
-    .container .col-sm-6 {
+    .container .col-4.col-sm-6 {
         grid-column: span 12;
+    }
+    footer .footer-top-row-info-card.col-sm-6 {
+        grid-column: span 6;
     }
 }
