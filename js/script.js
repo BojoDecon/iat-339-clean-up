@@ -18,6 +18,24 @@ function imageShowcase4() {
 	document.getElementById("image-showcase").src = "assets/img/product/vac4.jpg";
 }
 
+/* Single Product Alt */
+
+function altImageShowcase1() {
+    document.getElementById("image-showcase").src = "assets/img/product/vac1-alt.png";
+}
+
+function altImageShowcase2() {
+    document.getElementById("image-showcase").src = "assets/img/product/vac2-alt.jpg";
+}
+
+function altImageShowcase3() {
+    document.getElementById("image-showcase").src = "assets/img/product/vac3-alt.jpg";
+}
+
+function altImageShowcase4() {
+    document.getElementById("image-showcase").src = "assets/img/product/vac4-alt.jpg";
+}
+
 /* Pop up for add to cart and wishlist */
 
 function addToWishlist() {
