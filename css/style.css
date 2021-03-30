@@ -464,6 +464,42 @@ img.review-info-image {
     width: 100%;
 }
 
+.checkout-form input[type="radio"] {
+    display: none;
+}
+
+.checkout-form input[type="radio"] + label {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid #C4C4C4;
+    color: #949494;
+    margin: 2rem 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkout-form input[type="radio"]:hover + label {
+    color: #69e;
+    border-color: #69e;
+}
+
+.checkout-form input[type="radio"]:checked + label {
+    color: #69e;
+    border-color: #69e;
+}
+
+.checkout-form input[type="radio"] + label ion-icon {
+    font-size: 1.25rem;
+    position: relative;
+    bottom: -0.25rem;
+    left: -0.5rem;
+}
+
 .checkout-form .input-group {
     margin-bottom: 2em;
 }
