@@ -39,6 +39,7 @@
                             <li><a href="#review-form">Product Review Form</a></li>
                             <li><a href="#footer">Footer</a></li>
                             <li><a href="#review-carousel">Review Carousel</a></li>
+                            <li><a href="#shopping-cart">Shopping Cart</a></li>
                             <li><a href="#explore-top-brands">Explore Top Brands</a></li>
                             <li><a href="#product-grid-view">Product Grid View</a></li>
                             <li><a href="#reviews-section">Product Reviews Section</a></li>
@@ -65,7 +66,7 @@
                                             <div class="col-3">
                                                 <ul>
                                                     <li>
-                                                        <a href="index.html">
+                                                        <a href="#nav-bar">
                                                             <img class="logo" src="../assets/img/logo.png" alt="CleanUp Logo">
                                                         </a>
                                                     </li>
@@ -73,18 +74,14 @@
                                             </div>
                                             <div class="col-7">
                                                 <ul>
-                                                    <li><a href="products-list.html">Products</a></li>
-                                                    <li><a href="products-list.html">Brands</a></li>
-                                                    <li><a href="">Vacuum Finder</a></li>
-                                                    <li><a href="">Help</a></li>
-                                                    <li><a href="">FAQs</a></li>
+                                                    <li><a href="#nav-bar">Products</a></li>
+                                                    <li><a href="#nav-bar">Contact Us</a></li>   
                                                 </ul>
                                             </div>
                                             <div class="col-2">
                                                 <ul>
-                                                    <li><a href="products-list.html"><ion-icon name="search-outline"></ion-icon></a></li>
-                                                    <li><a href=""><ion-icon name="person-circle-outline"></ion-icon></a></li>
-                                                    <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                                                    <li><a href="#nav-bar"><ion-icon name="search-outline"></ion-icon></a></li>
+                                                    <li><a href="#nav-bar"><ion-icon name="cart-outline"></ion-icon></a></li>
                                                 </ul>
                                             </div>				
                                         </div>
@@ -104,11 +101,10 @@
                                                 <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><ion-icon name="menu-outline"></ion-icon></a>
                                             </div>
                                             <div class="col-sm-12" id="mobile-menu">
-                                                <a href="products-list.html">Products</a>
-                                                <a href="products-list.html">Brands</a>
-                                                <a href="">Vacuum Finder</a>
-                                                <a href="">Help</a>
-                                                <a href="">FAQs</a>
+                                                <a href="#nav-bar">Products</a>
+                                                <a href="#nav-bar">Contact Us</a>
+                                                <a href="#nav-bar"><ion-icon name="cart-outline"></ion-icon></a>
+                                                <a href="#nav-bar"><ion-icon name="search-outline"></ion-icon></a>
                                             </div>
                                         </div>
                                     </div>
@@ -285,8 +281,8 @@ nav.main-nav .mobile {
                                                 <ion-icon name="star-half"></ion-icon>
                                                 <p class="review-count">4.5 (347 reviews)</p>
                                             </div>
-                                            <a href="" class="button">Add to cart</a>
-                                            <a href="" class="button ghost">Add to wish list</a>
+                                            <a href="#single-product" class="button">Add to cart</a>
+                                            <a href="#single-product" class="button ghost">Add to wish list</a>
                                         </div>
                                         <div class="shipping-details">
                                             <h3>Shipping</h3>
@@ -776,17 +772,17 @@ nav.main-nav .mobile {
                                             <div class="col-3 col-sm-6">
                                                 <h4>Shop</h4>
                                                 <ul>
-                                                    <li><a href="products-list.html">Trending products</a></li>
-                                                    <li><a href="products-list.html">Best-sellers by category</a></li>
-                                                    <li><a href="cart.html">Go to cart</a></li>
+                                                    <li><a href="#footer">Trending products</a></li>
+                                                    <li><a href="#footer">Best-sellers by category</a></li>
+                                                    <li><a href="#footer">Go to cart</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-3 col-sm-6">
                                                 <h4>Team Links</h4>
                                                 <ul>
                                                     <li><a href="https://github.com/BojoDecon/iat-339-clean-up" target="_blank">GitHub repo</a></li>
-                                                    <li><a href="http://www.sfu.ca/~muttec/iat-339-clean-up/citations.html" target="_blank">Citations</a></li>
-                                                    <li><a href="http://www.sfu.ca/~muttec/iat-339-clean-up/pattern-library.html" target="_blank">Pattern library</a></li>
+                                                    <li><a href="../style-guide/citations.html" target="_blank">Citations</a></li>
+                                                    <li><a href="#footer" target="_blank">Pattern library</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-3 col-sm-12">
@@ -1134,11 +1130,11 @@ nav.main-nav .mobile {
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="breadcrumbs">
-                                            <a href="index.html" class="breadcrumbs-btn">Home</a>
+                                            <a href="#shopping-cart" class="breadcrumbs-btn">Home</a>
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <a href="cart.html" class="breadcrumbs-btn">Shopping Cart</a>
+                                            <a href="#shopping-cart" class="breadcrumbs-btn">Shopping Cart</a>
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <a href="" class="breadcrumbs-btn">Shipping information</a>
+                                            <a href="#shopping-cart" class="breadcrumbs-btn">Shipping information</a>
                                         </div>
                                         <h2 class="product-title">Checkout</h2>
                                     </div>
@@ -1223,7 +1219,7 @@ nav.main-nav .mobile {
                                                     <span class="checkout-item-price">$427.02</span>
                                                 </li>
                                             </ul>
-                                            <a href="billing-info.html" class="button">Continue to payment</a>
+                                            <a href="#shopping-cart" class="button">Continue to payment</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1400,7 +1396,7 @@ nav.main-nav .mobile {
                         <div class="element">
                             <h3 class="heading-example">Example</h3>
                             <div class="element-demo">
-                                <div class="row">
+                                <div class="row explore-top-brands">
                                     <div class="col-12">
                                         <h2 class="top-brands-title">Explore Top Brands</h2>
                                     </div>
@@ -1408,25 +1404,28 @@ nav.main-nav .mobile {
                                     <div class="col-8">
                                         <div class="row">
                                             <div class="col-4 col-sm-6 brand">
-                                                <a href="products-list.html"><img src="../assets/img/top-brand-logos/irobot-logo.png" alt="irobot"></a>
+                                                <a href="#explore-top-brands"><img src="../assets/img/top-brand-logos/irobot-logo.png" alt="irobot"></a>
                                             </div>
                                             <div class="col-4 col-sm-6 brand">
-                                                <a href="products-list.html"><img src="../assets/img/top-brand-logos/bissell-logo.png" alt="irobot"></a>
+                                                <a href="#explore-top-brands"><img src="../assets/img/top-brand-logos/bissell-logo.png" alt="irobot"></a>
                                             </div>
                                             <div class="col-4 col-sm-6 brand">
-                                                <a href="products-list.html"><img src="../assets/img/top-brand-logos/eufy-logo.png" alt="irobot"></a>
+                                                <a href="#explore-top-brands"><img src="../assets/img/top-brand-logos/eufy-logo.png" alt="irobot"></a>
                                             </div>
                                             <div class="col-2 col-sm-0"></div>
                                             <div class="col-4 col-sm-6 brand">
-                                                <a href="products-list.html"><img src="../assets/img/top-brand-logos/bobsweep-logo.jpeg" alt="irobot"></a>
+                                                <a href="#explore-top-brands"><img src="../assets/img/top-brand-logos/bobsweep-logo.jpeg" alt="irobot"></a>
                                             </div>
                                             <div class="col-4 brand">
-                                                <a href="products-list.html"><img src="../assets/img/top-brand-logos/ecovacs-logo.jpg" alt="irobot"></a>
+                                                <a href="#explore-top-brands"><img src="../assets/img/top-brand-logos/ecovacs-logo.jpg" alt="irobot"></a>
                                             </div>
                                             <div class="col-2"></div>
                                         </div>
                                     </div>
                                     <div class="col-2"></div>
+                                    <div class="col-12 bottom-row">
+                                        <p>alternatively, <a href="#explore-top-brands" class="button">Explore Vaccums</a></p>
+                                    </div>
                                 </div>
                             </div>
                             <h3 class="heading-code">Code</h3>
@@ -1524,7 +1523,7 @@ h2.top-brands-title {
                             <div class="element-demo">
                                 <div class="product-grid-view-container row">
                                     <div class="col-4 col-sm-6">
-                                        <a href="single-product.html" class="single-product-container">
+                                        <a href="#product-grid-view" class="single-product-container">
                                             <div class="image-container">
                                                 <img class="product-image" src="../assets/img/product-grid-view/vacuum0.png" alt="Vacuum 0">
                                             </div>
@@ -1541,7 +1540,7 @@ h2.top-brands-title {
                                         </a>
                                     </div>
                                     <div class="col-4 col-sm-6">
-                                        <a href="single-product-alt.html" class="single-product-container">
+                                        <a href="#product-grid-view" class="single-product-container">
                                             <div class="image-container">
                                                 <img class="product-image" src="../assets/img/product-grid-view/vacuum1.png" alt="Vacuum 1">
                                             </div>
@@ -1558,7 +1557,7 @@ h2.top-brands-title {
                                         </a>
                                     </div>
                                     <div class="col-4 col-sm-6">
-                                        <a href="single-product.html" class="single-product-container">
+                                        <a href="#product-grid-view" class="single-product-container">
                                             <div class="image-container">
                                                 <img class="product-image" src="../assets/img/product-grid-view/vacuum2.png" alt="Vacuum 2">
                                             </div>
