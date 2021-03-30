@@ -358,15 +358,15 @@
 						<div class="sorting-container">
 							<h2 class="sorting-title">Sort by</h2>
 							<div class="drop-down">
-								<button type="button" onclick="dropDownRating()" class="drop-btn">
-									New to Old
+								<button type="button" onclick="dropDownRating()" class="drop-btn" id="dropdown">
+									New to old
 									<ion-icon name="chevron-down-outline"></ion-icon>
 								</button>
 								<div id="sort-by-dropdown-rating" class="dropdown-content">
-									<p>New to old</p>
-									<p>Highest rating</p>
-									<p>Lowest rating</p>
-									<p>Old to new</p>
+									<p onclick="newToOld();">New to old</p>
+									<p onclick="highestRating();">Highest rating</p>
+									<p onclick="lowestRating();">Lowest rating</p>
+									<p onclick="oldToNew();">Old to new</p>
 								</div>
 							</div>
 						</div>
