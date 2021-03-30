@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanUp &middot; Shopping Cart</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Main Navigation-->
+    <header>
+        <nav class="main-nav">
+            <div class="desktop">
+				<div class="container">
+					<div class="col-3">
+						<ul>
+							<li>
+								<a href="index.html">
+									<img class="logo" src="assets/img/logo.png" alt="CleanUp Logo">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-7">
+						<ul>
+							<li><a href="products-list.html">Products</a></li>
+							<li><a href="#contact-us">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<ul>
+							<li><a href="products-list.html"><ion-icon name="search-outline"></ion-icon></a></li>
+							<li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+						</ul>
+					</div>				
+				</div>
+			</div>
+			<div class="mobile">
+				<div class="container">
+					<div class="col-sm-8">
+						<ul>
+							<li>
+								<a href="index.html">
+									<img class="logo" src="assets/img/logo.png" alt="CleanUp Logo">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><ion-icon name="menu-outline"></ion-icon></a>
+					</div>
+					<div class="col-sm-12" id="mobile-menu">
+						<a href="products-list.html">Products</a>
+						<a href="#contact-us">Contact Us</a>
+						<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+						<a href="products-list.html"><ion-icon name="search-outline"></ion-icon></a>
+					</div>
+				</div>
+			</div>
+        </nav>
+    </header>
+
+    <main>
+
+       <section id="cart">
+           <div class="container">
+               <!--Breadcrumbs-->
+                <div class="col-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html" class="breadcrumbs-btn">Home</a>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                        <a href="" class="breadcrumbs-btn">Shopping Cart</a>
+                    </div>
+                    <h2 class="product-title">Shopping Cart</h2>
+                </div>
+                <!--Cart Item Overview Module-->
+                <div class="col-8">
+                    <div class="cart-item">
+                        <p>No products in cart</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    
+                </div>
+           </div>
+       </section>
+
+       <section class="explore-top-brands m-t-0">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="top-brands-title">Explore Top Brands</h2>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-4 col-sm-6 brand">
+                            <a href="products-list.html"><img src="assets/img/top-brand-logos/irobot-logo.png" alt="irobot"></a>
+                        </div>
+                        <div class="col-4 col-sm-6 brand">
+                            <a href="products-list.html"><img src="assets/img/top-brand-logos/bissell-logo.png" alt="irobot"></a>
+                        </div>
+                        <div class="col-4 col-sm-6 brand">
+                            <a href="products-list.html"><img src="assets/img/top-brand-logos/eufy-logo.png" alt="irobot"></a>
+                        </div>
+                        <div class="col-2 col-sm-0"></div>
+                        <div class="col-4 col-sm-6 brand">
+                            <a href="products-list.html"><img src="assets/img/top-brand-logos/bobsweep-logo.jpeg" alt="irobot"></a>
+                        </div>
+                        <div class="col-4 brand">
+                            <a href="products-list.html"><img src="assets/img/top-brand-logos/ecovacs-logo.jpg" alt="irobot"></a>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-12 bottom-row">
+                    <p>alternatively, <a href="products-list.html" class="button">Explore Vaccums</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-top-row">
+            <div class="container">
+                <div class="footer-top-row-info-card col-3 col-sm-6">
+                    <ion-icon name="trophy-outline" role="img" class="md hydrated" aria-label="trophy outline"></ion-icon>
+                    <p>5-year warranty</p>
+                </div>
+                <div class="footer-top-row-info-card col-3 col-sm-6">
+                    <ion-icon name="reload-outline" role="img" class="md hydrated" aria-label="reload outline"></ion-icon>
+                    <p>Hassle-free returns</p>
+                </div>
+                <div class="footer-top-row-info-card col-3 col-sm-6">
+                    <ion-icon name="cube-outline" role="img" class="md hydrated" aria-label="cube outline"></ion-icon>
+                    <p>Free shipping</p>
+                </div>
+                <div class="footer-top-row-info-card col-3 col-sm-6">
+                    <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon>
+                    <p>24/7 support</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-row">
+            <div class="container">
+                <div class="col-2"></div>
+                <div class="col-3 col-sm-6">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products-list.html">Trending products</a></li>
+                        <li><a href="products-list.html">Best-sellers by category</a></li>
+                        <li><a href="cart.html">Go to cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-sm-6">
+                    <h4>Team Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/BojoDecon/iat-339-clean-up" target="_blank">GitHub repo</a></li>
+                        <li><a href="http://www.sfu.ca/~muttec/iat-339-clean-up/citations.html" target="_blank">Citations</a></li>
+                        <li><a href="http://www.sfu.ca/~muttec/iat-339-clean-up/pattern-library.html" target="_blank">Pattern library</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-sm-12" id="contact-us">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="tel:phone">+1 (778) 223 9292</a></li>
+                        <li><a href="mailto:support@cleanup.com">support@cleanup.com</a></li>
+                        <li>
+                            <a href="" class="button cta">
+                                <span>Chat with us</span>
+                                <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>
