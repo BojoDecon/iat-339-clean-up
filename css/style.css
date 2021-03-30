@@ -803,11 +803,13 @@ p.single-product-price {
 
 #hero {
     background: #F5F9FF;
-    padding: 5rem 0;
+    padding-bottom: 5rem;
 }
 
 .hero-text {
-    padding: 15%;
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-bottom: 15%;
 }
 
 .hero-text h1.hero-heading {
@@ -824,7 +826,7 @@ p.single-product-price {
 }
 
 .hero-img {
-    padding: 10%;
+    padding: 5%;
 }
 
 .advantage-text {
@@ -1610,6 +1612,11 @@ p.single-product-price {
         top: 50%;
         transform: translate(0, -50%);
         right: 0;
+    }
+
+    #hero {
+        background: #F5F9FF;
+        padding-bottom: 0;
     }
 }
 
