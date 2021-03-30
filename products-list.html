@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CleanUp &middot; Home</title>
+    <title>CleanUp &middot; Pet friendly vacuums</title>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -53,7 +53,14 @@
 						</ul>
 					</div>
 					<div class="col-sm-4">
-						<a href=""><ion-icon name="menu-outline"></ion-icon></a>
+						<a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><ion-icon name="menu-outline"></ion-icon></a>
+					</div>
+					<div class="col-sm-12" id="mobile-menu">
+						<a href="products-list.html">Products</a>
+						<a href="products-list.html">Brands</a>
+						<a href="">Vacuum Finder</a>
+						<a href="">Help</a>
+						<a href="">FAQs</a>
 					</div>
 				</div>
 			</div>
@@ -96,9 +103,9 @@
             <!--Side Filter Panel-->
             <div class="col-2">
                 <div class="side-filter-container">
+
                     <div>
-                        <button class="side-filter-btn" id="category-btn">
-                            <p>Categories</p>
+                        <button class="side-filter-btn" id="category-btn">Categories
                             <ion-icon id="category-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
@@ -113,8 +120,7 @@
                     </div>
                     
                     <div>
-                        <button class="side-filter-btn" id="features-btn">
-                            <p>Features</p>
+                        <button class="side-filter-btn" id="features-btn">Features
                             <ion-icon id="features-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
@@ -144,8 +150,7 @@
                     </div>
 
                     <div>
-                        <button class="side-filter-btn" id="price-range-btn">
-                            <p>Price range</p>
+                        <button class="side-filter-btn" id="price-range-btn">Price range
                             <ion-icon id="price-range-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
@@ -183,8 +188,7 @@
                     </div>
                     
                     <div>
-                        <button class="side-filter-btn" id="customer-rating-btn">
-                            <p>Customer rating</p>
+                        <button class="side-filter-btn" id="customer-rating-btn">Customer rating
                             <ion-icon id="customer-rating-chevron" name="chevron-down-outline"></ion-icon>
                         </button>
                         <div class="side-filter-panel">
