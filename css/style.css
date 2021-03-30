@@ -145,6 +145,10 @@ nav.main-nav ul li a {
     color: #333;
 }
 
+nav.main-nav ul li a:hover, nav.main-nav ul li a:focus {
+    color: #4D80D5;
+}
+
 nav.main-nav img.logo {
     max-width: 150px;
 }
@@ -187,6 +191,10 @@ nav.main-nav .mobile {
 
 #mobile-menu a ion-icon{
     font-size: 1.75rem;
+}
+
+#mobile-menu a:hover, #mobile-menu a:focus {
+    color: #4D80D5;
 }
 
 /* SINGLE PRODUCT VIEW */
