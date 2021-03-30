@@ -23,7 +23,7 @@ a:hover {
     color: #4D80D5;
 }
 
-a.button {
+.button {
     padding: 0.75rem 1rem;
     background: #69e;
     border: 2px solid #69e;
@@ -35,7 +35,7 @@ a.button {
     font-size: 1rem;
 }
 
-a.button.ghost {
+.button.ghost {
     background: transparent;
     color: #69e;
 }
@@ -225,10 +225,11 @@ h2.product-title {
     margin-bottom: 1rem;
 }
 
-.product-details a.button {
+.product-details .button {
     display: block;
     font-size: 1rem;
     margin: 1rem 0;
+    width: 100%;
 }
 
 .product-details .reviews-overview {
@@ -1265,6 +1266,30 @@ p.single-product-price {
 
 .hidden {
     display: none;
+}
+
+.pop-up {
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    animation: fadeOut ease 3s;
+    opacity: 0;
+    border-radius: 0.5rem;
+    background: #F5F9FF;
+    padding: 1rem;
+}
+
+.pop-up p {
+    margin: 0;
+}
+
+@keyframes fadeOut {
+    0% {bottom: -10rem; opacity: 1;}
+    50% {bottom: 5rem;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 /* MEDIA QUERIES */

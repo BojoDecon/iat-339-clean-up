@@ -96,7 +96,7 @@
 								<p class="review-count">4.5 (347 reviews)</p>
 							</div>
 							<a href="cart.html" class="button">Add to cart</a>
-							<a href="" class="button ghost">Add to wish list</a>
+							<button onclick="addToWishlist();" class="button ghost">Add to wish list</button>
 						</div>
 						<div class="shipping-details">
 							<h3>Shipping</h3>
@@ -592,6 +592,13 @@
 				<div class="divider">
 				</div>
 			</div>
+		</div>
+		<div class="hidden" id="add-to-cart">
+			<p>Item added to cart</p>
+		</div>
+
+		<div class="hidden" id="add-to-wishlist">
+			<p>Item added to wishlist</p>
 		</div>
 	</main>
 

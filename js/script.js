@@ -18,6 +18,16 @@ function imageShowcase4() {
 	document.getElementById("image-showcase").src = "assets/img/product/vac4.jpg";
 }
 
+/* Pop up for add to cart and wishlist */
+
+function addToWishlist() {
+    var popUp = document.getElementById("add-to-wishlist");
+    if (!popUp.classList.contains("pop-up")) {
+        popUp.classList.add("pop-up");
+        setTimeout(() => {  popUp.classList.remove("pop-up"); }, 3000);
+    }
+}
+
 /* Reviews Section page selection*/
 
 function reviewsPage1() {
