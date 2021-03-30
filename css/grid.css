@@ -73,23 +73,27 @@
         /* Reference: https://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
     }
 
-    .container .col-sm-3 {
+    .container [class^="col-"].col-sm-0 {
+        display: none;
+    }
+
+    .container [class^="col-"].col-sm-3 {
         grid-column: span 3;
     }
 
-    .container .col-sm-4 {
+    .container [class^="col-"].col-sm-4 {
         grid-column: span 4;
     }
 
-    .container .col-sm-6 {
+    .container [class^="col-"].col-sm-6 {
         grid-column: span 6;
     }
 
-    .container .col-sm-8 {
+    .container [class^="col-"].col-sm-8 {
         grid-column: span 8;
     }
 
-    .container .col-sm-9 {
+    .container [class^="col-"].col-sm-9 {
         grid-column: span 9;
     }
 }
