@@ -38,6 +38,12 @@ a:hover {
 .button.ghost {
     background: transparent;
     color: #69e;
+    cursor: pointer;
+}
+
+.button.ghost:hover {
+    color: #4D80D5;
+    border-color: #4D80D5;
 }
 
 a.button:hover, a.button:focus {
@@ -49,8 +55,6 @@ a.button:hover, a.button:focus {
 
 a.button.ghost:hover, a.button.ghost:focus {
     color: #fff;
-    background: #69e;
-    border-color: #69e;
 }
 
 a.button.cta {
