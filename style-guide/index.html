@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Styles &middot; Style Guide for IAT 339</title>
+    <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="../css/style-guide.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <div class="container top-level">
-            <div class="spacer">
+        <div class="container fluid">
+            <div class="col-2 center">
                 <h2>Style Guide</h2>
             </div>
-            <nav class="main-navbar">
+            <nav class="main-navbar col-10">
                 <ul>
                     <li><a class="button" href="index.html">Basic Styles</a></li>
                     <li><a class="button" href="pattern-library.html">UI Pattern Library</a></li>
@@ -25,8 +26,8 @@
         </div>
     </header>
 
-    <div class="container top-level">
-        <aside class="sidebar">
+    <div class="container fluid">
+        <aside class="sidebar col-2">
             <nav class="secondary-nav">
                 <ul>
                     <li>Text styling
@@ -50,34 +51,234 @@
             </nav>
         </aside>
         
-        <main>
+        <main class="col-10">
     
-            <div class="container">
+            <div class="container fluid">
 
-                <h1 class="page-title">Basic Styles</h1>
+                <div class="col-12">
+                    <h1 class="page-title">Basic Styles</h1>
     
-                <section id="headings">
-                    <h2>Headings</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <h1>This is Heading 1</h1>
-                            <h2>This is Heading 2</h2>
-                            <h3>This is Heading 3</h3>
+                    <section id="headings">
+                        <h2>Headings</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <h1>This is Heading 1</h1>
+                                <h2>This is Heading 2</h2>
+                                <h3>This is Heading 3</h3>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>Heading 1 is ssed for large organism headers, most pages will only have one. Heading 2 is used specifically for body paragraph headers; sometimes with just a few other elements within the same block as the header. Used for table headers, directory paths, and for any minor headers.</p>
+                            <h3 class="heading-code">Code</h3>
+                            <div class="code-grid-container">
+                                <div class="code-html">
+                                    <h4 class="heading-code">HTML</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    &lt;h1&gt;This is Heading 1&lt;/h1&gt;
+    &lt;h2&gt;This is Heading 2&lt;/h2&gt;
+    &lt;h3&gt;This is Heading 3&lt;/h3&gt;</pre>
+                                        </code>
+                                    </div>
+                                </div>
+                                <div class="code-css">
+                                    <h4 class="heading-code">CSS</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    h1, h2, h3 {
+        font-family: aktiv-grotesk, sans-serif; 
+    }</pre>
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>Heading 1 is ssed for large organism headers, most pages will only have one. Heading 2 is used specifically for body paragraph headers; sometimes with just a few other elements within the same block as the header. Used for table headers, directory paths, and for any minor headers.</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-grid-container">
+            
+                    </section>
+            
+                    <section id="paragraphs">
+                        <h2>Paragraphs</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis amet odit ratione officia reprehenderit quidem minima id cum officiis non molestiae voluptates vero repellendus doloremque, maiores totam vitae libero.</p>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>For large bodies of text, mainly descriptions.</p>
+                            <h3 class="heading-code">Code</h3>
+                            <div class="code-grid-container">
+                                <div class="code-html">
+                                    <h4 class="heading-code">HTML</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                        </code>
+                                    </div>
+                                </div>
+                                <div class="code-css">
+                                    <h4 class="heading-code">CSS</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    p {
+        max-width: 36em;
+    }</pre>
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </section>
+            
+                    <section id="bullet-list">
+                        <h2>Bulleted Lists</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <ul>
+                                    <li>Item One</li>
+                                    <li>Item Two</li>
+                                    <li>Item Three</li>
+                                </ul>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>Standard bulleted lists that is stacked on top of one another, currently we do not have an example of this implemented on our website.</p>
+                            <h3 class="heading-code">Code</h3>
+                            <div class="code-grid-container">
+                                <div class="code-html">
+                                    <h4 class="heading-code">HTML</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    &lt;ul&gt;
+        &lt;li&gt;Item One&lt;/li&gt;
+        &lt;li&gt;Item Two&lt;/li&gt;
+        &lt;li&gt;Item Three&lt;/li&gt;
+    &lt;/ul&gt;</pre>                         
+                                        </code>
+                                    </div>
+                                </div>
+                                <div class="code-css">
+                                    <h4 class="heading-code">CSS</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </section>
+            
+                    <section id="number-list">
+                        <h2>Numbered Lists</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <ol>
+                                    <li>Item One</li>
+                                    <li>Item Two</li>
+                                    <li>Item Three</li>
+                                </ol>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>Standard numbered lists that is stacked on top of one another, currently we do not have an example of this implemented on our website.</p>
+                            <h3 class="heading-code">Code</h3>
+                            <div class="code-grid-container">
+                                <div class="code-html">
+                                    <h4 class="heading-code">HTML</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    &lt;ol&gt;
+        &lt;li&gt;Item One&lt;/li&gt;
+        &lt;li&gt;Item Two&lt;/li&gt;
+        &lt;li&gt;Item Three&lt;/li&gt;
+    &lt;/ol&gt;</pre>
+                                        </code>
+                                    </div>
+                                </div>
+                                <div class="code-css">
+                                    <h4 class="heading-code">CSS</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </section>
+            
+            
+                    <section id="links">
+                        <h2>Links</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <p>Lorem ipsum dolor sit amet <a href='javascript:void();'>consectetur</a> adipisicing elit.</p>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>The in-text link is used for less encouraged functionalities that goes against the ecommerce goal of selling products. Most of these will be seen on our checkout pages with examples such as "remove item".</p>
+                            <h3 class="heading-code">Code</h3>
+                            <div class="code-grid-container">
+                                <div class="code-html">
+                                    <h4 class="heading-code">HTML</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            &lt;p&gt;Lorem ipsum dolor sit amet &lt;a href=""&gt;consectetur&lt;/a&gt; adipisicing elit.&lt;/p&gt;
+                                        </code>
+                                    </div>
+                                </div>
+                                <div class="code-css">
+                                    <h4 class="heading-code">CSS</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    a {
+        color: #69e;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #4D80D5;
+    }</pre>
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </section>
+            
+                    <section id="cta">
+                        <h2>Call To Action Buttons</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <a a href='' class="button">CTA Button</a>
+                                <a a href='' class="button ghost">Ghost Button</a>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>This call to action is designed to utilize color to denote a functionality allowing user to recognize interactive elements easier. The slightly muted blue also creates less of an agressive need for the interaction as we want the user experience to be relaxed and explorative. The ghost buttons are for buttons next to CTA buttons with less density in design resulting in less of an attraction for interaction (secondary CTA buttons).</p>
+                            <h3 class="heading-code">Code</h3>
                             <div class="code-html">
                                 <h4 class="heading-code">HTML</h4>
                                 <div class="element-code">
                                     <code>
-                                        <pre>
-&lt;h1&gt;This is Heading 1&lt;/h1&gt;
-&lt;h2&gt;This is Heading 2&lt;/h2&gt;
-&lt;h3&gt;This is Heading 3&lt;/h3&gt;</pre>
+                                        &lt;a href="" class="button"&gt; CTA Button &lt;/a&gt;<br>
+                                        &lt;a href="" class="button ghost"&gt; Ghost Button &lt;/a&gt;
                                     </code>
                                 </div>
                             </div>
@@ -86,34 +287,106 @@
                                 <div class="element-code">
                                     <code>
                                         <pre>
-h1, h2, h3 {
-    font-family: aktiv-grotesk, sans-serif; 
-}</pre>
+    a.button {
+        padding: 0.75rem 1rem;
+        background: #69e;
+        border: 2px solid #69e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    a.button.ghost {
+        background: transparent;
+        color: #69e;
+    }
+
+    a.button:hover, a.button:focus {
+        box-shadow: 0 2px 10px 1px rgb(160,198,255);
+        background: #4D80D5;
+        border-color: #4D80D5;
+    }
+
+    a.button.ghost:hover, a.button.ghost:focus {
+        color: #fff;
+        background: #69e;
+        border-color: #69e;
+    }</pre>
                                     </code>
                                 </div>
                             </div>
                         </div>
-                    </div>
-        
-                </section>
-        
-                <section id="paragraphs">
-                    <h2>Paragraphs</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis amet odit ratione officia reprehenderit quidem minima id cum officiis non molestiae voluptates vero repellendus doloremque, maiores totam vitae libero.</p>
+                    </section>
+            
+                    <section id="submit">
+                        <h2>Submit Buttons</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <form action="">
+                                    <input type="submit" value="Submit Button"></input>
+                                </form>
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>Submit buttons will be the same as call to action buttons for the same reason outlined. The CSS and javascript will carry out the intended functionality.</p>
+                            <h3 class="heading-code">Code</h3>
+                            <div class="code-grid-container">
+                                <div class="code-html">
+                                    <h4 class="heading-code">HTML</h4>
+                                    <div class="element-code">
+                                        <code>
+    &lt;form action=""&gt; <br />
+        &lt;input type="submit" value="Submit Button"&gt; <br />
+    &lt;/form&gt;</pre>
+                                        </code>
+                                    </div>
+                                </div>
+                                <div class="code-css">
+                                    <h4 class="heading-code">CSS</h4>
+                                    <div class="element-code">
+                                        <code>
+                                            <pre>
+    input[type="submit"] {
+        background: #69e;
+        color: #fff;
+        border-color: #69e;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="submit"]:focus {
+        box-shadow: 0 2px 10px 1px rgb(160,198,255);
+        background: #4D80D5;
+        border-color: #4D80D5;
+    }
+    </pre>
+                                    </code>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>For large bodies of text, mainly descriptions.</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-grid-container">
+                    </section>
+            
+                    <section id="input">
+                        <h2>Inputs</h2>
+            
+                        <div class="element">
+                            <h3 class="heading-example">Example</h3>
+                            <div class="element-demo">
+                                <label for="input-demo">Label</label>
+                                <input type="text" id="input-demo" placeholder="Placeholder Text">
+                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>Text input and labels will be stacked on top of each other for easier design balance. The text input boxes will turn from grey to our primary blue when focused (clicked) on for responsiveness.</p>
+                            <h3 class="heading-code">Code</h3>
                             <div class="code-html">
                                 <h4 class="heading-code">HTML</h4>
                                 <div class="element-code">
                                     <code>
-                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+                                        &lt;label for="input-demo"&gt;Label&lt;/label&gt; <br />
+                                        &lt;input type="text" id="input-demo" placeholder="Placeholder Text"&gt;
                                     </code>
                                 </div>
                             </div>
@@ -122,387 +395,115 @@ h1, h2, h3 {
                                 <div class="element-code">
                                     <code>
                                         <pre>
-p {
-    max-width: 36em;
-}</pre>
+    input, textarea {
+        border-radius: 4px;
+        box-shadow: none;
+        border: 2px solid #ddd;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+        font-size: 1em;
+        display: block;
+        font-family: aktiv-grotesk, BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border: 2px solid #69e;
+    }
+
+    input[type="text"], textarea {
+        padding: 0.5rem 0.75rem;
+    }
+
+    label {
+        margin-bottom: 0.25rem;
+    }</pre>
                                     </code>
                                 </div>
                             </div>
                         </div>
-                    </div>
-        
-                </section>
-        
-                <section id="bullet-list">
-                    <h2>Bulleted Lists</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <ul>
-                                <li>Item One</li>
-                                <li>Item Two</li>
-                                <li>Item Three</li>
-                            </ul>
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>Standard bulleted lists that is stacked on top of one another, currently we do not have an example of this implemented on our website.</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-grid-container">
-                            <div class="code-html">
-                                <h4 class="heading-code">HTML</h4>
-                                <div class="element-code">
-                                    <code>
-                                        <pre>
-&lt;ul&gt;
-    &lt;li&gt;Item One&lt;/li&gt;
-    &lt;li&gt;Item Two&lt;/li&gt;
-    &lt;li&gt;Item Three&lt;/li&gt;
-&lt;/ul&gt;</pre>                         
-                                    </code>
+            
+                    </section>
+                    
+                    <section id="colors">
+                        <h2>Color Palette</h2>
+            
+                        <div class="element">
+                            <h3>Swatches</h3>
+                            <div class="element-demo">
+
+                                <div class="colors-grid-container">
+                                    <div class="color-item">
+                                        <h4>Primary Color (CTAs, Links, Highlights)</h4>
+                                        <figure>
+                                            <img src="../assets/img/swatches/6699ee.png" alt="#6699ee or sky blue color">
+                                            <figcaption>
+                                                <code>
+                                                    #6699ee <br />
+                                                    rgb(102,153,238)
+                                                </code>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="color-item">
+                                        <h4>Accent Color (Sections, Table backgrounds)</h4>
+                                        <figure>
+                                            <img src="../assets/img/swatches/F5F9FF.png" alt="#F5F9FF or pale baby blue color">
+                                            <figcaption>
+                                                <code>
+                                                    #F5F9FF <br />
+                                                    rgb(245,249,255)
+                                                </code>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="color-item">
+                                        <h4>Secondary Color (Buttons, Footer, Filters)</h4>
+                                        <figure>
+                                            <img src="../assets/img/swatches/454545.png" alt="#454545 or charcoal color">
+                                            <figcaption>
+                                                <code>
+                                                    #454545 <br />
+                                                    rgb(69,69,69)
+                                                </code>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="color-item">
+                                        <h4>Navigation Color (Navbar background)</h4>
+                                        <figure>
+                                            <img src="../assets/img/swatches/FAFAFB.png" alt="#FAFAFB or ivory color">
+                                            <figcaption>
+                                                <code>
+                                                    #FAFAFB <br />
+                                                    rgb(255,255,251)
+                                                </code>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
                                 </div>
+            
                             </div>
-                            <div class="code-css">
-                                <h4 class="heading-code">CSS</h4>
-                                <div class="element-code">
-                                    <code>
-                                        
-                                    </code>
-                                </div>
-                            </div>
+                            <h3 class="heading-description">Description</h3>
+                            <p>The primary tones of blue are used to portray a calm shopping/exploring experience while using our site. The lighter tones make up the most of the site as it will have a lot of white space for the same calming reason. The simplicity also makes interactions and functionality clear as they will be easily recognizable.</p>
                         </div>
-                    </div>
-        
-                </section>
-        
-                <section id="number-list">
-                    <h2>Numbered Lists</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <ol>
-                                <li>Item One</li>
-                                <li>Item Two</li>
-                                <li>Item Three</li>
-                            </ol>
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>Standard numbered lists that is stacked on top of one another, currently we do not have an example of this implemented on our website.</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-grid-container">
-                            <div class="code-html">
-                                <h4 class="heading-code">HTML</h4>
-                                <div class="element-code">
-                                    <code>
-                                        <pre>
-&lt;ol&gt;
-    &lt;li&gt;Item One&lt;/li&gt;
-    &lt;li&gt;Item Two&lt;/li&gt;
-    &lt;li&gt;Item Three&lt;/li&gt;
-&lt;/ol&gt;</pre>
-                                    </code>
-                                </div>
-                            </div>
-                            <div class="code-css">
-                                <h4 class="heading-code">CSS</h4>
-                                <div class="element-code">
-                                    <code>
-                                        
-                                    </code>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                </section>
-        
-        
-                <section id="links">
-                    <h2>Links</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <p>Lorem ipsum dolor sit amet <a href='javascript:void();'>consectetur</a> adipisicing elit.</p>
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>The in-text link is used for less encouraged functionalities that goes against the ecommerce goal of selling products. Most of these will be seen on our checkout pages with examples such as "remove item".</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-grid-container">
-                            <div class="code-html">
-                                <h4 class="heading-code">HTML</h4>
-                                <div class="element-code">
-                                    <code>
-                                        &lt;p&gt;Lorem ipsum dolor sit amet &lt;a href=""&gt;consectetur&lt;/a&gt; adipisicing elit.&lt;/p&gt;
-                                    </code>
-                                </div>
-                            </div>
-                            <div class="code-css">
-                                <h4 class="heading-code">CSS</h4>
-                                <div class="element-code">
-                                    <code>
-                                        <pre>
-a {
-    color: #69e;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #4D80D5;
-}</pre>
-                                    </code>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                </section>
-        
-                <section id="cta">
-                    <h2>Call To Action Buttons</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <a a href='' class="button">CTA Button</a>
-                            <a a href='' class="button ghost">Ghost Button</a>
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>This call to action is designed to utilize color to denote a functionality allowing user to recognize interactive elements easier. The slightly muted blue also creates less of an agressive need for the interaction as we want the user experience to be relaxed and explorative. The ghost buttons are for buttons next to CTA buttons with less density in design resulting in less of an attraction for interaction (secondary CTA buttons).</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-html">
-                            <h4 class="heading-code">HTML</h4>
-                            <div class="element-code">
-                                <code>
-                                    &lt;a href="" class="button"&gt; CTA Button &lt;/a&gt;<br>
-                                    &lt;a href="" class="button ghost"&gt; Ghost Button &lt;/a&gt;
-                                </code>
-                            </div>
-                        </div>
-                        <div class="code-css">
-                            <h4 class="heading-code">CSS</h4>
-                            <div class="element-code">
-                                <code>
-                                    <pre>
-a.button {
-    padding: 0.75rem 1rem;
-    background: #69e;
-    border: 2px solid #69e;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    text-align: center;
-    font-size: 1rem;
-}
-
-a.button.ghost {
-    background: transparent;
-    color: #69e;
-}
-
-a.button:hover, a.button:focus {
-    box-shadow: 0 2px 10px 1px rgb(160,198,255);
-    background: #4D80D5;
-    border-color: #4D80D5;
-}
-
-a.button.ghost:hover, a.button.ghost:focus {
-    color: #fff;
-    background: #69e;
-    border-color: #69e;
-}</pre>
-                                 </code>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-        
-                <section id="submit">
-                    <h2>Submit Buttons</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <form action="">
-                                <input type="submit" value="Submit Button"></input>
-                            </form>
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>Submit buttons will be the same as call to action buttons for the same reason outlined. The CSS and javascript will carry out the intended functionality.</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-grid-container">
-                            <div class="code-html">
-                                <h4 class="heading-code">HTML</h4>
-                                <div class="element-code">
-                                    <code>
-&lt;form action=""&gt; <br />
-    &lt;input type="submit" value="Submit Button"&gt; <br />
-&lt;/form&gt;</pre>
-                                    </code>
-                                </div>
-                            </div>
-                            <div class="code-css">
-                                <h4 class="heading-code">CSS</h4>
-                                <div class="element-code">
-                                    <code>
-                                        <pre>
-input[type="submit"] {
-    background: #69e;
-    color: #fff;
-    border-color: #69e;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus {
-    box-shadow: 0 2px 10px 1px rgb(160,198,255);
-    background: #4D80D5;
-    border-color: #4D80D5;
-}
-</pre>
-                                </code>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-        
-                <section id="input">
-                    <h2>Inputs</h2>
-        
-                    <div class="element">
-                        <h3 class="heading-example">Example</h3>
-                        <div class="element-demo">
-                            <label for="input-demo">Label</label>
-                            <input type="text" id="input-demo" placeholder="Placeholder Text">
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>Text input and labels will be stacked on top of each other for easier design balance. The text input boxes will turn from grey to our primary blue when focused (clicked) on for responsiveness.</p>
-                        <h3 class="heading-code">Code</h3>
-                        <div class="code-html">
-                            <h4 class="heading-code">HTML</h4>
-                            <div class="element-code">
-                                <code>
-                                    &lt;label for="input-demo"&gt;Label&lt;/label&gt; <br />
-                                    &lt;input type="text" id="input-demo" placeholder="Placeholder Text"&gt;
-                                </code>
-                            </div>
-                        </div>
-                        <div class="code-css">
-                            <h4 class="heading-code">CSS</h4>
-                            <div class="element-code">
-                                <code>
-                                    <pre>
-input, textarea {
-    border-radius: 4px;
-    box-shadow: none;
-    border: 2px solid #ddd;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    font-size: 1em;
-    display: block;
-    font-family: aktiv-grotesk, BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border: 2px solid #69e;
-}
-
-input[type="text"], textarea {
-    padding: 0.5rem 0.75rem;
-}
-
-label {
-    margin-bottom: 0.25rem;
-}</pre>
-                                </code>
-                            </div>
-                        </div>
-                    </div>
-        
-                </section>
+            
+                    </section>
+                </div>
                 
-                <section id="colors">
-                    <h2>Color Palette</h2>
-        
-                    <div class="element">
-                        <h3>Swatches</h3>
-                        <div class="element-demo">
-
-                            <div class="colors-grid-container">
-                                <div class="color-item">
-                                    <h4>Primary Color (CTAs, Links, Highlights)</h4>
-                                    <figure>
-                                        <img src="../assets/img/swatches/6699ee.png" alt="#6699ee or sky blue color">
-                                        <figcaption>
-                                            <code>
-                                                #6699ee <br />
-                                                rgb(102,153,238)
-                                            </code>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="color-item">
-                                    <h4>Accent Color (Sections, Table backgrounds)</h4>
-                                    <figure>
-                                        <img src="../assets/img/swatches/F5F9FF.png" alt="#F5F9FF or pale baby blue color">
-                                        <figcaption>
-                                            <code>
-                                                #F5F9FF <br />
-                                                rgb(245,249,255)
-                                            </code>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="color-item">
-                                    <h4>Secondary Color (Buttons, Footer, Filters)</h4>
-                                    <figure>
-                                        <img src="../assets/img/swatches/454545.png" alt="#454545 or charcoal color">
-                                        <figcaption>
-                                            <code>
-                                                #454545 <br />
-                                                rgb(69,69,69)
-                                            </code>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="color-item">
-                                    <h4>Navigation Color (Navbar background)</h4>
-                                    <figure>
-                                        <img src="../assets/img/swatches/FAFAFB.png" alt="#FAFAFB or ivory color">
-                                        <figcaption>
-                                            <code>
-                                                #FAFAFB <br />
-                                                rgb(255,255,251)
-                                            </code>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-        
-                        </div>
-                        <h3 class="heading-description">Description</h3>
-                        <p>The primary tones of blue are used to portray a calm shopping/exploring experience while using our site. The lighter tones make up the most of the site as it will have a lot of white space for the same calming reason. The simplicity also makes interactions and functionality clear as they will be easily recognizable.</p>
-                    </div>
-        
-                </section>
             </div>
     
         </main>
     </div>
     
     <footer>
-       <div class="container top-level">
-           <div class="spacer"></div>
-           <div class="content">
-                <ul>
-                    <li>&copy; Team Robot Vacuum 2021 for IAT 339 at Simon Fraser University</li>
-                    <li><a href="citations.html">Citations</a></li>
-                </ul>
-           </div>
-       </div>
-    </footer>
+        <div class="container fluid">
+            <div class="col-2"></div>
+            <div class="col-10">
+                <p>&copy; Team Robot Vacuum 2021 for IAT 339 at Simon Fraser University</p>
+            </div>
+        </div>
+     </footer>
 
 </body>
 </html>

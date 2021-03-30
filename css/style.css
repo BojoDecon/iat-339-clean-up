@@ -180,9 +180,13 @@ nav.main-nav .mobile {
     color: #333;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     padding: 1rem 0;
     display: block;
+}
+
+#mobile-menu a ion-icon{
+    font-size: 1.75rem;
 }
 
 /* SINGLE PRODUCT VIEW */
@@ -1363,6 +1367,10 @@ p.single-product-price {
 
 .pop-up p {
     margin: 0;
+}
+
+.center {
+    text-align: center;
 }
 
 @keyframes fadeOut {
