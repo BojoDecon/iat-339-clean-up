@@ -431,10 +431,6 @@ h2.product-title {
     z-index: 1;
 }
 
-.review-element:not(.active):last-child {
-    float: right;
-}
-
 .review-element.active {
     font-size: 0.8em;
     opacity: 1;
@@ -445,6 +441,11 @@ h2.product-title {
     right: 0;
     margin-top: -2em;
 }
+
+.review-element:not(.active):last-of-type {
+    float: right;
+}
+
 
 h2.review-heading {
     margin-top: 0;
@@ -477,6 +478,25 @@ img.review-info-image {
     border-radius: 100%;
     box-shadow: 0 2px 10px 1px rgba(160,198,255, 0.5);
     margin-right: 0.8em;
+}
+
+.review-controls ion-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.review-controls .left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 10;
+}
+
+.review-controls .right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: 10;
 }
 
 /* CHECKOUT MODULE */
